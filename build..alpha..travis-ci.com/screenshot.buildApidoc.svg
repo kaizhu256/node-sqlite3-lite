@@ -1,9 +1,9 @@
-<svg height="1006" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="1006" fill="#555" width="720"></rect>
+<svg height="1070" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1070" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T14:47:47.808Z - npm-testing /home/travis/bu\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T20:08:31.984Z - npm-testing /home/travis/bu\</tspan>
 <tspan x="10" y="58">ild/kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 52637</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 33527</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
@@ -24,94 +24,100 @@
 <tspan x="10" y="202">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/LICENSE</tspan>
 
 <tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
-<tspan x="10" y="234">api-v3-linux-x64.node</tspan>
+<tspan x="10" y="234">api-v3-darwin-x64.node</tspan>
 
-<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
+<tspan x="10" y="266">api-v3-linux-x64.node</tspan>
 
-<tspan x="10" y="266">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="282"></tspan>
 
-<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package-lock.json</tspan>
+<tspan x="10" y="298">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
+<tspan x="10" y="314">uild/test-report.json</tspan>
 
-<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
+<tspan x="10" y="346">api-v3-win32-x64.node</tspan>
 
-<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.travis.yml</tspan>
+<tspan x="10" y="378">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="346">apidocCreate - requiring /home/travis/build/kaizhu256/node-sqlite3-lite ...</tspan>
+<tspan x="10" y="394">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package-lock.json</tspan>
 
-<tspan x="10" y="362">apidocCreate - ... required /home/travis/build/kaizhu256/node-sqlite3-lite</tspan>
+<tspan x="10" y="410">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="378"></tspan>
+<tspan x="10" y="426">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
-<tspan x="10" y="394">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
-<tspan x="10" y="410">uild/test-report.json</tspan>
+<tspan x="10" y="442">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.travis.yml</tspan>
 
-<tspan x="10" y="426">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="458">apidocCreate - requiring /home/travis/build/kaizhu256/node-sqlite3-lite ...</tspan>
 
-<tspan x="10" y="442">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
+<tspan x="10" y="474">apidocCreate - ... required /home/travis/build/kaizhu256/node-sqlite3-lite</tspan>
 
-<tspan x="10" y="458">jslint - 29ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="490">jslint - 2ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="474">jslint - 33ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="506">jslint - 24ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
 
-<tspan x="10" y="490">jslint - 43ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="522">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="506">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
+<tspan x="10" y="538">jslint - 28ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="522">testRunDefault - 487 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="554">jslint - 38ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
-<tspan x="10" y="538">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="554">t.json</tspan>
+<tspan x="10" y="570">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
 
-<tspan x="10" y="570"></tspan>
+<tspan x="10" y="586">testRunDefault - 1003 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="586">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
-<tspan x="10" y="602">uild/test-report.json</tspan>
+<tspan x="10" y="602">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="618">t.json</tspan>
 
-<tspan x="10" y="618"></tspan>
+<tspan x="10" y="634"></tspan>
 
-<tspan x="10" y="634">-------------------------------------------------------</tspan>
+<tspan x="10" y="650">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
+<tspan x="10" y="666">uild/test-report.json</tspan>
 
-<tspan x="10" y="650">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T14:47:47.903Z</tspan>
+<tspan x="10" y="682"></tspan>
 
-<tspan x="10" y="666">|     488 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="698">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="682">-------------------------------------------------------</tspan>
+<tspan x="10" y="714">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T20:08:32.078Z</tspan>
 
-<tspan x="10" y="698">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="714">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T14:47:43.351Z</tspan>
-
-<tspan x="10" y="730">|      12 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="730">|    1003 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="746">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="762">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T14:47:42.178Z</tspan>
+<tspan x="10" y="762">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="778">L, like Gecko) HeadlessChrome/84.0.4147.135 Safari/537.36 - 2020-08-19T20:08:27.652Z</tspan>
 
-<tspan x="10" y="778">|    4447 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="794">|       7 ms            0 failed        2 passed      |</tspan>
 
-<tspan x="10" y="794">-------------------------------------------------------</tspan>
+<tspan x="10" y="810">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="810"></tspan>
+<tspan x="10" y="826">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T20:08:26.453Z</tspan>
 
-<tspan x="10" y="826">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="842">t.html</tspan>
+<tspan x="10" y="842">|    4331 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="858">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
-<tspan x="10" y="874">e.svg</tspan>
+<tspan x="10" y="858">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="874"></tspan>
 
 <tspan x="10" y="890">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="906">t.badge.svg</tspan>
+<tspan x="10" y="906">t.html</tspan>
 
-<tspan x="10" y="922"></tspan>
+<tspan x="10" y="922">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
+<tspan x="10" y="938">e.svg</tspan>
 
-<tspan x="10" y="938">buildApidoc - 0 failed tests</tspan>
+<tspan x="10" y="954">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="970">t.badge.svg</tspan>
 
-<tspan x="10" y="954"></tspan>
+<tspan x="10" y="986"></tspan>
 
-<tspan x="10" y="970"></tspan>
+<tspan x="10" y="1002">buildApidoc - 0 failed tests</tspan>
 
-<tspan x="10" y="986">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T14:47:48.638Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="1018"></tspan>
+
+<tspan x="10" y="1034"></tspan>
+
+<tspan x="10" y="1050">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T20:08:33.313Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

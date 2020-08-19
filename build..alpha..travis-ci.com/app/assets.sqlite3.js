@@ -226,29 +226,63 @@ if (
     && process.argv[2] === "install"
     && require("path").basename(process.argv[1]) === "lib.sqlite3.js"
 ) {
-    let file;
-    file = "napi-v3-" + process.platform + "-" + process.arch;
-    console.error(
-        "downloading "
-        + "https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/"
-        + file + ".tar.gz"
-    );
-    require("child_process").spawnSync((
-        "curl -A \"chrome\" -Lf "
-        + "https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/"
-        + file + ".tar.gz "
-        + "| tar -O -xz " + file + "/node_sqlite3.node "
-        + "> .node_sqlite3-v5.0.0-" + file + ".node"
-    ), {
-        encoding: "utf8",
-        shell: true,
-        stdio: [
-            "ignore", 1, 2
-        ]
+    let dict;
+    dict = {};
+    [
+        "x64", process.arch
+    ].forEach(function (arch) {
+        [
+            "darwin", "linux", "win32", process.platform
+        ].forEach(function (platform) {
+            let file;
+            file = "napi-v3-" + platform + "-" + arch;
+            if (dict.hasOwnProperty(file)) {
+                return;
+            }
+            dict[file] = true;
+            console.error(
+                "sqlite3 - fetching "
+                + "https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/"
+                + file + ".tar.gz"
+            );
+            require("child_process").spawnSync((
+                "curl -A \"chrome\" -Lf "
+                + "https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/"
+                + file + ".tar.gz "
+                + "| tar -O -xz " + file + "/node_sqlite3.node "
+                + "> .node_sqlite3-v5.0.0-" + file + ".node"
+            ), {
+                encoding: "utf8",
+                shell: true,
+                stdio: [
+                    "ignore", 1, 2
+                ]
+            });
+        });
     });
     return;
 }
 /* jslint ignore:start */
+(function () {
+"use strict";
+let EventEmitter = require('events').EventEmitter;
+let path = require('path');
+let util = require('util');
+let exports_mapbox_node_sqlite3_lib_sqlite3 = {};
+let exports_mapbox_node_sqlite3_lib_sqlite3_binding = {};
+// hack-sqlite3 - require binding
+let sqlite3_binding_file = (
+    ".node_sqlite3-v5.0.0-napi-v3-"
+    + process.platform + "-" + process.arch
+    + ".node"
+);
+if (!require("fs").existsSync(__dirname + "/" + sqlite3_binding_file)) {
+    return;
+}
+exports_mapbox_node_sqlite3_lib_sqlite3_binding = require(
+    "./" + sqlite3_binding_file
+);
+let exports_mapbox_node_sqlite3_lib_trace = {};
 /*
 repo https://github.com/mapbox/node-sqlite3/tree/v5.0.0
 committed 2020-06-02T12:27:30Z
@@ -256,31 +290,59 @@ committed 2020-06-02T12:27:30Z
 
 
 /*
-file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/sqlite3-binding.js
+file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/trace.js
 */
+// Inspired by https://github.com/tlrobinson/long-stack-traces
+// var util = require('util');
+
+function extendTrace(object, property, pos) {
+    if (!Object.getOwnPropertyDescriptor(object, property).writable) {
+        return;
+    }
+    var old = object[property];
+    object[property] = function() {
+        var error = new Error();
+        var name = object.constructor.name + '#' + property + '(' +
+            Array.prototype.slice.call(arguments).map(function(el) {
+                return util.inspect(el, false, 0);
+            }).join(', ') + ')';
+
+        if (typeof pos === 'undefined') pos = -1;
+        if (pos < 0) pos += arguments.length;
+        var cb = arguments[pos];
+        if (typeof arguments[pos] === 'function') {
+            arguments[pos] = function replacement() {
+                var err = arguments[0];
+                if (err && err.stack && !err.__augmented) {
+                    err.stack = filter(err).join('\n');
+                    err.stack += '\n--> in ' + name;
+                    err.stack += '\n' + filter(error).slice(1).join('\n');
+                    err.__augmented = true;
+                }
+                return cb.apply(this, arguments);
+            };
+        }
+        return old.apply(this, arguments);
+    };
+}
+exports_mapbox_node_sqlite3_lib_trace.extendTrace = extendTrace;
+
+
+function filter(error) {
+    return error.stack.split('\n').filter(function(line) {
+        return line.indexOf(__filename) < 0;
+    });
+}
 
 
 /*
 file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/sqlite3.js
 */
-var path = require('path');
-// hack-sqlite3 - fallback-dummy-module
-var sqlite3 = {
-    Backup: function () {},
-    Database: function () {},
-    Statement: function () {}
-};
-local.sqlite3_binary_file = (
-    ".node_sqlite3-v5.0.0-napi-v3-"
-    + process.platform + "-" + process.arch
-    + ".node"
-);
-try {
-    sqlite3 = require("./" + local.sqlite3_binary_file);
-} catch (ignore) {}
-var EventEmitter = require('events').EventEmitter;
-// hack-sqlite3 - custom exports
-// module.exports = exports = sqlite3;
+// var path = require('path');
+// var sqlite3 = exports_mapbox_node_sqlite3_lib_sqlite3_binding;
+// var EventEmitter = require('events').EventEmitter;
+// hack-sqlite3 - init exports
+let sqlite3 = exports_mapbox_node_sqlite3_lib_sqlite3_binding;
 
 function normalizeMethod (fn) {
     return function (sql) {
@@ -452,7 +514,8 @@ Database.prototype.removeAllListeners = function(type) {
 // Save the stack trace over EIO callbacks.
 sqlite3.verbose = function() {
     if (!isVerbose) {
-        var trace = require('./trace');
+// hack-sqlite3 - require module
+        var trace = exports_mapbox_node_sqlite3_lib_trace;
         [
             'prepare',
             'get',
@@ -482,12 +545,15 @@ sqlite3.verbose = function() {
 
     return this;
 };
+// hack-sqlite3 - init exports
+let trace           = exports_mapbox_node_sqlite3_lib_trace;
+Object.assign(local, sqlite3, { sqlite3_binding_file });
+}());
 
 
 /*
 file none
 */
-Object.assign(local, sqlite3);
 /* jslint ignore:end */
 }());
 }());

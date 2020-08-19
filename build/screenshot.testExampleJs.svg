@@ -1,5 +1,5 @@
-<svg height="558" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="558" fill="#555" width="720"></rect>
+<svg height="830" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="830" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
@@ -11,59 +11,85 @@
 
 <tspan x="10" y="90">running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha' ...</tspan>
 
-<tspan x="10" y="106">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</tspan>
+<tspan x="10" y="106">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-darwin-x64\</tspan>
+<tspan x="10" y="122">.tar.gz</tspan>
 
-<tspan x="10" y="122">                                 Dload  Upload   Total   Spent    Left  Speed</tspan>
+<tspan x="10" y="138">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</tspan>
 
-<tspan x="10" y="138"></tspan>
-<tspan x="10" y="154">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="170">100  968k  100  968k    0     0  2578k      0 --:--:-- --:--:-- --:--:-- 2583k</tspan>
+<tspan x="10" y="154">                                 Dload  Upload   Total   Spent    Left  Speed</tspan>
 
-<tspan x="10" y="186">... finished running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha'</tspan>
+<tspan x="10" y="170"></tspan>
+<tspan x="10" y="186">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="202">100  948k  100  948k    0     0  2141k      0 --:--:-- --:--:-- --:--:-- 2146k</tspan>
 
-<tspan x="10" y="202">npm WARN saveError ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+<tspan x="10" y="218">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-linux-x64.\</tspan>
+<tspan x="10" y="234">tar.gz</tspan>
 
-<tspan x="10" y="218">npm notice created a lockfile as package-lock.json. You should commit this file.</tspan>
+<tspan x="10" y="250">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</tspan>
 
-<tspan x="10" y="234">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
+<tspan x="10" y="266">                                 Dload  Upload   Total   Spent    Left  Speed</tspan>
 
-<tspan x="10" y="250">npm WARN app No description</tspan>
+<tspan x="10" y="282"></tspan>
+<tspan x="10" y="298">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="314">100  968k  100  968k    0     0  2565k      0 --:--:-- --:--:-- --:--:-- 2570k</tspan>
 
-<tspan x="10" y="266">npm WARN app No repository field.</tspan>
+<tspan x="10" y="330">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-win32-x64.\</tspan>
+<tspan x="10" y="346">tar.gz</tspan>
 
-<tspan x="10" y="282">npm WARN app No README data</tspan>
+<tspan x="10" y="362">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</tspan>
 
-<tspan x="10" y="298">npm WARN app No license field.</tspan>
+<tspan x="10" y="378">                                 Dload  Upload   Total   Spent    Left  Speed</tspan>
 
-<tspan x="10" y="314"></tspan>
+<tspan x="10" y="394"></tspan>
+<tspan x="10" y="410">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="426">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="442">100  732k  100  732k    0     0  1945k      0 --:--:-- --:--:-- --:--:-- 1941k</tspan>
 
-<tspan x="10" y="330">+ sqlite3-lite@2020.8.19</tspan>
+<tspan x="10" y="458">... finished running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha'</tspan>
 
-<tspan x="10" y="346">added 1 package from 1 contributor and audited 1 package in 1.31s</tspan>
+<tspan x="10" y="474">npm WARN saveError ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
 
-<tspan x="10" y="362">found 0 vulnerabilities</tspan>
+<tspan x="10" y="490">npm notice created a lockfile as package-lock.json. You should commit this file.</tspan>
 
-<tspan x="10" y="378"></tspan>
+<tspan x="10" y="506">npm WARN enoent ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
 
-<tspan x="10" y="394">1: Ipsum 0</tspan>
+<tspan x="10" y="522">npm WARN app No description</tspan>
 
-<tspan x="10" y="410">2: Ipsum 1</tspan>
+<tspan x="10" y="538">npm WARN app No repository field.</tspan>
 
-<tspan x="10" y="426">3: Ipsum 2</tspan>
+<tspan x="10" y="554">npm WARN app No README data</tspan>
 
-<tspan x="10" y="442">4: Ipsum 3</tspan>
+<tspan x="10" y="570">npm WARN app No license field.</tspan>
 
-<tspan x="10" y="458">5: Ipsum 4</tspan>
+<tspan x="10" y="586"></tspan>
 
-<tspan x="10" y="474">6: Ipsum 5</tspan>
+<tspan x="10" y="602">+ sqlite3-lite@2020.8.19</tspan>
 
-<tspan x="10" y="490">7: Ipsum 6</tspan>
+<tspan x="10" y="618">added 1 package from 1 contributor and audited 1 package in 2.176s</tspan>
 
-<tspan x="10" y="506">8: Ipsum 7</tspan>
+<tspan x="10" y="634">found 0 vulnerabilities</tspan>
 
-<tspan x="10" y="522">9: Ipsum 8</tspan>
+<tspan x="10" y="650"></tspan>
 
-<tspan x="10" y="538">10: Ipsum 9</tspan>
+<tspan x="10" y="666">1: Ipsum 0</tspan>
+
+<tspan x="10" y="682">2: Ipsum 1</tspan>
+
+<tspan x="10" y="698">3: Ipsum 2</tspan>
+
+<tspan x="10" y="714">4: Ipsum 3</tspan>
+
+<tspan x="10" y="730">5: Ipsum 4</tspan>
+
+<tspan x="10" y="746">6: Ipsum 5</tspan>
+
+<tspan x="10" y="762">7: Ipsum 6</tspan>
+
+<tspan x="10" y="778">8: Ipsum 7</tspan>
+
+<tspan x="10" y="794">9: Ipsum 8</tspan>
+
+<tspan x="10" y="810">10: Ipsum 9</tspan>
 
 </text>
 </svg>

@@ -427,7 +427,7 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">sqlite3-lite.</span>sqlite3_binary_file</span>
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">sqlite3-lite.</span>sqlite3_binding_file</span>
 
         </li>
 
@@ -1269,7 +1269,8 @@ db.serialize(function () {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function() {
     if (!isVerbose) {
-        var trace = require(&apos;./trace&apos;);
+// hack-sqlite3 - require module
+        var trace = exports_mapbox_node_sqlite3_lib_trace;
         [
             &apos;prepare&apos;,
             &apos;get&apos;,
