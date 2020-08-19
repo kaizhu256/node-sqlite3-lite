@@ -4587,7 +4587,7 @@
         "code": [
             "//#!/usr/bin/env node",
             "/*",
-            " * lib.sqlite3_lite.js (0.0.1)",
+            " * lib.sqlite3_lite.js (2020.8.19)",
             " * https://github.com/kaizhu256/node-sqlite3-lite",
             " * the greatest app in the world!",
             " *",
