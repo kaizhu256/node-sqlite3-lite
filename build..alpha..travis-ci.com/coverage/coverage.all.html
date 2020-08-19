@@ -305,7 +305,7 @@
         </td>
         <td>
             100%<br>
-            (426 / 426)
+            (428 / 428)
         </td>
         <td>
             100%<br>
@@ -313,11 +313,11 @@
         </td>
         <td>
             100%<br>
-            (80 / 80)
+            (81 / 81)
         </td>
         <td>
             100%<br>
-            (423 / 423)
+            (425 / 425)
         </td>
     </tbody>
     </table>
@@ -368,7 +368,7 @@
         </td>
         <td>
             100%<br>
-            (205 / 205)
+            (206 / 206)
         </td>
         <td>
             100%<br>
@@ -380,7 +380,7 @@
         </td>
         <td>
             100%<br>
-            (202 / 202)
+            (203 / 203)
         </td>
     </tr>
 
@@ -391,7 +391,7 @@
         </td>
         <td>
             100%<br>
-            (87 / 87)
+            (88 / 88)
         </td>
         <td>
             100%<br>
@@ -399,11 +399,11 @@
         </td>
         <td>
             100%<br>
-            (17 / 17)
+            (18 / 18)
         </td>
         <td>
             100%<br>
-            (87 / 87)
+            (88 / 88)
         </td>
     </tr>
 
@@ -1940,19 +1940,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
@@ -3695,7 +3695,7 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
         </td>
         <td>
             100%<br>
-            (205 / 205)
+            (206 / 206)
         </td>
         <td>
             100%<br>
@@ -3707,7 +3707,7 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
         </td>
         <td>
             100%<br>
-            (202 / 202)
+            (203 / 203)
         </td>
     </tbody>
     </table>
@@ -4209,6 +4209,7 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
 <a href="#l491" id="l491">491</a>
 <a href="#l492" id="l492">492</a>
 <a href="#l493" id="l493">493</a>
+<a href="#l494" id="l494">494</a>
 </td>
         <td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -4483,11 +4484,12 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -4977,12 +4979,13 @@ var sqlite3 = {
     Database: <span class="fstat-skip" title="function not covered">function () {</span>},
     Statement: <span class="fstat-skip" title="function not covered">function () {</span>}
 };
+local.sqlite3_binary = (
+    ".node_sqlite3-v5.0.0-napi-v3-"
+    + process.platform + "-" + process.arch
+    + ".node"
+);
 try {
-    sqlite3 = require(
-        "./.node_sqlite3-v5.0.0-napi-v3-"
-        + process.platform + "-" + process.arch
-        + ".node"
-    );
+    sqlite3 = require("./" + local.sqlite3_binary);
 } catch (ignore) {}
 var EventEmitter = require('events').EventEmitter;
 // hack-sqlite3 - custom exports
@@ -5517,7 +5520,7 @@ local.Sqlite3Statement = Statement;
         </td>
         <td>
             100%<br>
-            (87 / 87)
+            (88 / 88)
         </td>
         <td>
             100%<br>
@@ -5525,11 +5528,11 @@ local.Sqlite3Statement = Statement;
         </td>
         <td>
             100%<br>
-            (17 / 17)
+            (18 / 18)
         </td>
         <td>
             100%<br>
-            (87 / 87)
+            (88 / 88)
         </td>
     </tbody>
     </table>
@@ -5741,6 +5744,18 @@ local.Sqlite3Statement = Statement;
 <a href="#l201" id="l201">201</a>
 <a href="#l202" id="l202">202</a>
 <a href="#l203" id="l203">203</a>
+<a href="#l204" id="l204">204</a>
+<a href="#l205" id="l205">205</a>
+<a href="#l206" id="l206">206</a>
+<a href="#l207" id="l207">207</a>
+<a href="#l208" id="l208">208</a>
+<a href="#l209" id="l209">209</a>
+<a href="#l210" id="l210">210</a>
+<a href="#l211" id="l211">211</a>
+<a href="#l212" id="l212">212</a>
+<a href="#l213" id="l213">213</a>
+<a href="#l214" id="l214">214</a>
+<a href="#l215" id="l215">215</a>
 </td>
         <td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -5945,6 +5960,18 @@ local.Sqlite3Statement = Statement;
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 </td>
         <td class="text"><pre class="prettyprint lang-js" tabIndex="0">
 /* istanbul instrument in package sqlite3 */
@@ -6147,7 +6174,19 @@ local.testRunDefault(local);
 
 // run shared js-env code - function
 (function () {
-return;
+local.testCase_buildApp_default = function (opt, onError) {
+/*
+ * this function will test buildApp's default handling-behavior
+ */
+    local._testCase_buildApp_default({
+        assetsList: [
+            {
+                file: "/" + local.sqlite3_binary,
+                url: "/" + local.sqlite3_binary
+            }
+        ]
+    }, onError, opt);
+};
 }());
 }());
 </pre></td>

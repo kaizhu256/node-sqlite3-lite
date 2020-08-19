@@ -270,12 +270,13 @@ var sqlite3 = {
     Database: function () {},
     Statement: function () {}
 };
+local.sqlite3_binary = (
+    ".node_sqlite3-v5.0.0-napi-v3-"
+    + process.platform + "-" + process.arch
+    + ".node"
+);
 try {
-    sqlite3 = require(
-        "./.node_sqlite3-v5.0.0-napi-v3-"
-        + process.platform + "-" + process.arch
-        + ".node"
-    );
+    sqlite3 = require("./" + local.sqlite3_binary);
 } catch (ignore) {}
 var EventEmitter = require('events').EventEmitter;
 // hack-sqlite3 - custom exports

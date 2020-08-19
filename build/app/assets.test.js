@@ -198,6 +198,18 @@ local.testRunDefault(local);
 
 // run shared js-env code - function
 (function () {
-return;
+local.testCase_buildApp_default = function (opt, onError) {
+/*
+ * this function will test buildApp's default handling-behavior
+ */
+    local._testCase_buildApp_default({
+        assetsList: [
+            {
+                file: "/" + local.sqlite3_binary,
+                url: "/" + local.sqlite3_binary
+            }
+        ]
+    }, onError, opt);
+};
 }());
 }());
