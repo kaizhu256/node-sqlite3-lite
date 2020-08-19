@@ -4979,13 +4979,13 @@ var sqlite3 = {
     Database: <span class="fstat-skip" title="function not covered">function () {</span>},
     Statement: <span class="fstat-skip" title="function not covered">function () {</span>}
 };
-local.sqlite3_binary = (
+local.sqlite3_binary_file = (
     ".node_sqlite3-v5.0.0-napi-v3-"
     + process.platform + "-" + process.arch
     + ".node"
 );
 try {
-    sqlite3 = require("./" + local.sqlite3_binary);
+    sqlite3 = require("./" + local.sqlite3_binary_file);
 } catch (ignore) {}
 var EventEmitter = require('events').EventEmitter;
 // hack-sqlite3 - custom exports
@@ -6181,8 +6181,8 @@ local.testCase_buildApp_default = function (opt, onError) {
     local._testCase_buildApp_default({
         assetsList: [
             {
-                file: "/" + local.sqlite3_binary,
-                url: "/" + local.sqlite3_binary
+                file: "/" + local.sqlite3_binary_file,
+                url: "/" + local.sqlite3_binary_file
             }
         ]
     }, onError, opt);

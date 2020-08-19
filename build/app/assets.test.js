@@ -205,8 +205,8 @@ local.testCase_buildApp_default = function (opt, onError) {
     local._testCase_buildApp_default({
         assetsList: [
             {
-                file: "/" + local.sqlite3_binary,
-                url: "/" + local.sqlite3_binary
+                file: "/" + local.sqlite3_binary_file,
+                url: "/" + local.sqlite3_binary_file
             }
         ]
     }, onError, opt);
