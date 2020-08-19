@@ -100,7 +100,7 @@ instruction
             if (err) {
                 throw err;
             }
-            globalThis.console.log(row.id + ": " + row.info);
+            console.log(row.id + ": " + row.info);
         });
     });
     db.close();

@@ -1,9 +1,9 @@
-<svg height="2014" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2014" fill="#555" width="720"></rect>
+<svg height="1982" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1982" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=npmTest]\x1b[0m - 2020-08-19T14:40:46.431Z - npm-testing /home/travis/build/\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=npmTest]\x1b[0m - 2020-08-19T14:47:42.053Z - npm-testing /home/travis/build/\</tspan>
 <tspan x="10" y="58">kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -23,21 +23,21 @@
 <tspan x="10" y="202">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build\</tspan>
 <tspan x="10" y="218">/test-report.json</tspan>
 
-<tspan x="10" y="234">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="234">http-server listening on port 41905</tspan>
 
-<tspan x="10" y="250">http-server listening on port 34023</tspan>
+<tspan x="10" y="250">testRunDefault - 12 ms - [node test-case 1 of 4 passed] - testCase_nop_default</tspan>
 
-<tspan x="10" y="266">jslint - 28ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
+<tspan x="10" y="266">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="282">jslint - 31ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="282">testRunDefault - 43 ms - [node test-case 2 of 4 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="298">jslint - 34ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="298">jslint - 43ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
 
-<tspan x="10" y="314">testRunDefault - 20 ms - [node test-case 1 of 4 passed] - testCase_nop_default</tspan>
+<tspan x="10" y="314">jslint - 48ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="330">jslint - 46ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="330">jslint - 53ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="346">testRunDefault - 53 ms - [node test-case 2 of 4 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="346">jslint - 65ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
 <tspan x="10" y="362">1: Ipsum 0</tspan>
 
@@ -61,164 +61,161 @@
 
 <tspan x="10" y="522">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.html</tspan>
 
-<tspan x="10" y="538">jslint - 12ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.js</tspan>
+<tspan x="10" y="538">jslint - 13ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.js</tspan>
 
 <tspan x="10" y="554">jslint - 18ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.css</tspan>
 
-<tspan x="10" y="570">jslint - 20ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.htm\</tspan>
+<tspan x="10" y="570">jslint - 21ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.htm\</tspan>
 <tspan x="10" y="586">l</tspan>
 
-<tspan x="10" y="602">jslint - 21ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.js</tspan>
+<tspan x="10" y="602">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.js</tspan>
 
-<tspan x="10" y="618">jslint - 22ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.test.js</tspan>
+<tspan x="10" y="618">jslint - 31ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.test.js</tspan>
 
-<tspan x="10" y="634">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.ht\</tspan>
+<tspan x="10" y="634">jslint - 35ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.ht\</tspan>
 <tspan x="10" y="650">ml</tspan>
 
-<tspan x="10" y="666">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.html</tspan>
+<tspan x="10" y="666">jslint - 41ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.html</tspan>
 
-<tspan x="10" y="682">jslint - 27ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/utility2.state.ini\</tspan>
+<tspan x="10" y="682">jslint - 44ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/utility2.state.ini\</tspan>
 <tspan x="10" y="698">t.js</tspan>
 
-<tspan x="10" y="714">&gt; </tspan>
+<tspan x="10" y="714">&gt; http-server listening on port 48720</tspan>
 
-<tspan x="10" y="730">DevTools listening on ws://127.0.0.1:41619/devtools/browser/363080e4-f9bf-4f88-93ad-1d39a1a42705</tspan>
+<tspan x="10" y="730"></tspan>
 
-<tspan x="10" y="746">http-server listening on port 43551</tspan>
+<tspan x="10" y="746">DevTools listening on ws://127.0.0.1:40823/devtools/browser/7635dfb4-5e11-48b8-a46c-6b649bec4816</tspan>
 
-<tspan x="10" y="762">1: Ipsum 0</tspan>
+<tspan x="10" y="762">jslint - 286ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.l\</tspan>
+<tspan x="10" y="778">ib.jslint.js</tspan>
 
-<tspan x="10" y="778">2: Ipsum 1</tspan>
+<tspan x="10" y="794">1: Ipsum 0</tspan>
 
-<tspan x="10" y="794">3: Ipsum 2</tspan>
+<tspan x="10" y="810">2: Ipsum 1</tspan>
 
-<tspan x="10" y="810">4: Ipsum 3</tspan>
+<tspan x="10" y="826">3: Ipsum 2</tspan>
 
-<tspan x="10" y="826">5: Ipsum 4</tspan>
+<tspan x="10" y="842">4: Ipsum 3</tspan>
 
-<tspan x="10" y="842">6: Ipsum 5</tspan>
+<tspan x="10" y="858">5: Ipsum 4</tspan>
 
-<tspan x="10" y="858">7: Ipsum 6</tspan>
+<tspan x="10" y="874">6: Ipsum 5</tspan>
 
-<tspan x="10" y="874">8: Ipsum 7</tspan>
+<tspan x="10" y="890">7: Ipsum 6</tspan>
 
-<tspan x="10" y="890">9: Ipsum 8</tspan>
+<tspan x="10" y="906">8: Ipsum 7</tspan>
 
-<tspan x="10" y="906">10: Ipsum 9</tspan>
+<tspan x="10" y="922">9: Ipsum 8</tspan>
 
-<tspan x="10" y="922">[0819/144047.461756:ERROR:command_buffer_proxy_impl.cc(122)] ContextResult::kTransientFailure: F\</tspan>
-<tspan x="10" y="938">ailed to send GpuChannelMsg_CreateCommandBuffer.</tspan>
+<tspan x="10" y="938">10: Ipsum 9</tspan>
 
-<tspan x="10" y="954">jslint - 381ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.l\</tspan>
-<tspan x="10" y="970">ib.jslint.js</tspan>
+<tspan x="10" y="954">[0819/144743.386873:INFO:CONSOLE(9)] "Uncaught TypeError: sqlite3.Database is not a constructor"\</tspan>
+<tspan x="10" y="970">, source: http://127.0.0.1:41905/assets.example.js (9)</tspan>
 
-<tspan x="10" y="986">[0819/144047.734092:INFO:CONSOLE(9)] "Uncaught TypeError: sqlite3.Database is not a constructor"\</tspan>
-<tspan x="10" y="1002">, source: http://127.0.0.1:34023/assets.example.js (9)</tspan>
+<tspan x="10" y="986">[0819/144743.403014:INFO:CONSOLE(50099)] "testRunDefault - 5 ms - [browser test-case 1 of 2 pass\</tspan>
+<tspan x="10" y="1002">ed] - testCase_buildApp_default", source: http://127.0.0.1:41905/assets.utility2.rollup.js (5009\</tspan>
+<tspan x="10" y="1018">9)</tspan>
 
-<tspan x="10" y="1018">[0819/144047.751808:INFO:CONSOLE(50099)] "testRunDefault - 5 ms - [browser test-case 1 of 2 pass\</tspan>
-<tspan x="10" y="1034">ed] - testCase_buildApp_default", source: http://127.0.0.1:34023/assets.utility2.rollup.js (5009\</tspan>
-<tspan x="10" y="1050">9)</tspan>
+<tspan x="10" y="1034">[0819/144743.407671:INFO:CONSOLE(50099)] "testRunDefault - 6 ms - [browser test-case 2 of 2 pass\</tspan>
+<tspan x="10" y="1050">ed] - testCase_nop_default", source: http://127.0.0.1:41905/assets.utility2.rollup.js (50099)</tspan>
 
-<tspan x="10" y="1066">[0819/144047.753681:INFO:CONSOLE(50099)] "testRunDefault - 5 ms - [browser test-case 2 of 2 pass\</tspan>
-<tspan x="10" y="1082">ed] - testCase_nop_default", source: http://127.0.0.1:34023/assets.utility2.rollup.js (50099)</tspan>
+<tspan x="10" y="1066">[0819/144743.494109:INFO:CONSOLE(126)] "domOnEventWindowOnloadTimeElapsed = 172", source: http:/\</tspan>
+<tspan x="10" y="1082">/127.0.0.1:41905/?modeTest=1&amp;timeoutDefault=30000&amp;modeTestCase= (126)</tspan>
 
-<tspan x="10" y="1098">[0819/144047.841740:INFO:CONSOLE(126)] "domOnEventWindowOnloadTimeElapsed = 187", source: http:/\</tspan>
-<tspan x="10" y="1114">/127.0.0.1:34023/?modeTest=1&amp;timeoutDefault=30000&amp;modeTestCase= (126)</tspan>
+<tspan x="10" y="1098">testRunDefault - 1185 ms - [node test-case 3 of 4 passed] - testCase_webpage_default</tspan>
 
-<tspan x="10" y="1130">testRunDefault - 1130 ms - [node test-case 3 of 4 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="1114">testRunDefault - 4447 ms - [node test-case 4 of 4 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="1146">testRunDefault - 4406 ms - [node test-case 4 of 4 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="1130">---------------|---------|---------|---------|---------|</tspan>
+
+<tspan x="10" y="1146">File           | % Stmts | % Brchs | % Funcs | % Lines |</tspan>
 
 <tspan x="10" y="1162">---------------|---------|---------|---------|---------|</tspan>
 
-<tspan x="10" y="1178">File           | % Stmts | % Brchs | % Funcs | % Lines |</tspan>
+<tspan x="10" y="1178">All files      |     100 |     100 |     100 |     100 |</tspan>
 
-<tspan x="10" y="1194">---------------|---------|---------|---------|---------|</tspan>
+<tspan x="10" y="1194">example.js     |     100 |     100 |     100 |     100 |</tspan>
 
-<tspan x="10" y="1210">All files      |     100 |     100 |     100 |     100 |</tspan>
+<tspan x="10" y="1210">lib.sqlite3.js |     100 |     100 |     100 |     100 |</tspan>
 
-<tspan x="10" y="1226">example.js     |     100 |     100 |     100 |     100 |</tspan>
+<tspan x="10" y="1226">test.js        |     100 |     100 |     100 |     100 |</tspan>
 
-<tspan x="10" y="1242">lib.sqlite3.js |     100 |     100 |     100 |     100 |</tspan>
+<tspan x="10" y="1242">---------------|---------|---------|---------|---------|</tspan>
 
-<tspan x="10" y="1258">test.js        |     100 |     100 |     100 |     100 |</tspan>
+<tspan x="10" y="1258"></tspan>
 
-<tspan x="10" y="1274">---------------|---------|---------|---------|---------|</tspan>
+<tspan x="10" y="1274">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
+<tspan x="10" y="1290">overage.txt</tspan>
 
-<tspan x="10" y="1290"></tspan>
+<tspan x="10" y="1306">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/i\</tspan>
+<tspan x="10" y="1322">ndex.html</tspan>
 
-<tspan x="10" y="1306">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
-<tspan x="10" y="1322">overage.txt</tspan>
+<tspan x="10" y="1338">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/e\</tspan>
+<tspan x="10" y="1354">xample.js.html</tspan>
 
-<tspan x="10" y="1338">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/i\</tspan>
-<tspan x="10" y="1354">ndex.html</tspan>
+<tspan x="10" y="1370">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/l\</tspan>
+<tspan x="10" y="1386">ib.sqlite3.js.html</tspan>
 
-<tspan x="10" y="1370">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/e\</tspan>
-<tspan x="10" y="1386">xample.js.html</tspan>
+<tspan x="10" y="1402">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/t\</tspan>
+<tspan x="10" y="1418">est.js.html</tspan>
 
-<tspan x="10" y="1402">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/l\</tspan>
-<tspan x="10" y="1418">ib.sqlite3.js.html</tspan>
-
-<tspan x="10" y="1434">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/t\</tspan>
-<tspan x="10" y="1450">est.js.html</tspan>
+<tspan x="10" y="1434">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
+<tspan x="10" y="1450">overage.all.html</tspan>
 
 <tspan x="10" y="1466">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
-<tspan x="10" y="1482">overage.all.html</tspan>
+<tspan x="10" y="1482">overage.json</tspan>
 
 <tspan x="10" y="1498">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
-<tspan x="10" y="1514">overage.json</tspan>
+<tspan x="10" y="1514">overage.include.json</tspan>
 
 <tspan x="10" y="1530">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
-<tspan x="10" y="1546">overage.include.json</tspan>
+<tspan x="10" y="1546">overage.badge.svg</tspan>
 
-<tspan x="10" y="1562">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/coverage/c\</tspan>
-<tspan x="10" y="1578">overage.badge.svg</tspan>
+<tspan x="10" y="1562">istanbul - created coverage file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/cover\</tspan>
+<tspan x="10" y="1578">age/index.html</tspan>
 
-<tspan x="10" y="1594">istanbul - created coverage file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/cover\</tspan>
-<tspan x="10" y="1610">age/index.html</tspan>
+<tspan x="10" y="1594"></tspan>
 
-<tspan x="10" y="1626"></tspan>
+<tspan x="10" y="1610">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build\</tspan>
+<tspan x="10" y="1626">/test-report.json</tspan>
 
-<tspan x="10" y="1642">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build\</tspan>
-<tspan x="10" y="1658">/test-report.json</tspan>
+<tspan x="10" y="1642"></tspan>
 
-<tspan x="10" y="1674"></tspan>
+<tspan x="10" y="1658">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1690">-------------------------------------------------------</tspan>
+<tspan x="10" y="1674">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="1690">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T14:47:43.351Z</tspan>
 
-<tspan x="10" y="1706">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="1722">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T14:40:47.698Z</tspan>
+<tspan x="10" y="1706">|      12 ms            0 failed        2 passed      |</tspan>
 
-<tspan x="10" y="1738">|       8 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="1722">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1754">-------------------------------------------------------</tspan>
+<tspan x="10" y="1738">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T14:47:42.178Z</tspan>
 
-<tspan x="10" y="1770">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T14:40:46.552Z</tspan>
+<tspan x="10" y="1754">|    4447 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="1786">|    4407 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="1770">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1802">-------------------------------------------------------</tspan>
+<tspan x="10" y="1786"></tspan>
 
-<tspan x="10" y="1818"></tspan>
+<tspan x="10" y="1802">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="1818">t.html</tspan>
 
-<tspan x="10" y="1834">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1850">t.html</tspan>
+<tspan x="10" y="1834">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
+<tspan x="10" y="1850">e.svg</tspan>
 
-<tspan x="10" y="1866">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
-<tspan x="10" y="1882">e.svg</tspan>
+<tspan x="10" y="1866">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="1882">t.badge.svg</tspan>
 
-<tspan x="10" y="1898">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1914">t.badge.svg</tspan>
+<tspan x="10" y="1898"></tspan>
+
+<tspan x="10" y="1914">npmTest - 0 failed tests</tspan>
 
 <tspan x="10" y="1930"></tspan>
 
-<tspan x="10" y="1946">npmTest - 0 failed tests</tspan>
+<tspan x="10" y="1946"></tspan>
 
-<tspan x="10" y="1962"></tspan>
-
-<tspan x="10" y="1978"></tspan>
-
-<tspan x="10" y="1994">\x1b[35m[MODE_BUILD=npmTest]\x1b[0m - 2020-08-19T14:40:51.405Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="1962">\x1b[35m[MODE_BUILD=npmTest]\x1b[0m - 2020-08-19T14:47:47.067Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

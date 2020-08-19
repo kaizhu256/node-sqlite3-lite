@@ -17,7 +17,7 @@
 
 <tspan x="10" y="138"></tspan>
 <tspan x="10" y="154">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="170">100  968k  100  968k    0     0  2253k      0 --:--:-- --:--:-- --:--:-- 2258k</tspan>
+<tspan x="10" y="170">100  968k  100  968k    0     0  2578k      0 --:--:-- --:--:-- --:--:-- 2583k</tspan>
 
 <tspan x="10" y="186">... finished running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha'</tspan>
 
@@ -39,7 +39,7 @@
 
 <tspan x="10" y="330">+ sqlite3-lite@2020.8.19</tspan>
 
-<tspan x="10" y="346">added 1 package from 1 contributor and audited 1 package in 1.388s</tspan>
+<tspan x="10" y="346">added 1 package from 1 contributor and audited 1 package in 1.31s</tspan>
 
 <tspan x="10" y="362">found 0 vulnerabilities</tspan>
 
