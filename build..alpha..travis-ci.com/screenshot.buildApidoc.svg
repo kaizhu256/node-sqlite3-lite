@@ -1,9 +1,9 @@
-<svg height="974" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="974" fill="#555" width="720"></rect>
+<svg height="1038" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1038" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:06:18.489Z - npm-testing /home/travis/bu\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:05:25.276Z - npm-testing /home/travis/bu\</tspan>
 <tspan x="10" y="58">ild/kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 64311</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 37787</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
@@ -46,20 +46,20 @@
 
 <tspan x="10" y="394">jslint - 2ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="410">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
+<tspan x="10" y="410">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3_lite.js</tspan>
 
-<tspan x="10" y="426">testRunDefault - 174 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="426">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
 
-<tspan x="10" y="442">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="458">t.json</tspan>
+<tspan x="10" y="442">testRunDefault - 83505 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="474">jslint - 34ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3_lite.js</tspan>
+<tspan x="10" y="458">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="474">t.json</tspan>
 
 <tspan x="10" y="490">jslint - 38ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="506">jslint - 44ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="506">jslint - 41ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="522">jslint - 55ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="522">jslint - 51ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
 <tspan x="10" y="538"></tspan>
 
@@ -70,45 +70,52 @@
 
 <tspan x="10" y="602">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="618">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T05:06:18.577Z</tspan>
+<tspan x="10" y="618">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T05:04:02.057Z</tspan>
 
-<tspan x="10" y="634">|     174 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="634">|   83505 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="650">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="666">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="682">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:06:13.718Z</tspan>
+<tspan x="10" y="666">| test-report - buildApp - node - linux v14.8.0 - 2020-08-19T05:03:47.800Z</tspan>
 
-<tspan x="10" y="698">|      18 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="682">|   13094 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="714">-------------------------------------------------------</tspan>
+<tspan x="10" y="698">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="730">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T05:06:12.824Z</tspan>
+<tspan x="10" y="714">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="730">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:03:57.492Z</tspan>
 
-<tspan x="10" y="746">|    4503 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="746">|      12 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="762">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="778"></tspan>
+<tspan x="10" y="778">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="794">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:05:20.554Z</tspan>
 
-<tspan x="10" y="794">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="810">t.html</tspan>
+<tspan x="10" y="810">|      23 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="826">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
-<tspan x="10" y="842">e.svg</tspan>
+<tspan x="10" y="826">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="842"></tspan>
 
 <tspan x="10" y="858">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="874">t.badge.svg</tspan>
+<tspan x="10" y="874">t.html</tspan>
 
-<tspan x="10" y="890"></tspan>
+<tspan x="10" y="890">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
+<tspan x="10" y="906">e.svg</tspan>
 
-<tspan x="10" y="906">buildApidoc - 0 failed tests</tspan>
+<tspan x="10" y="922">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="938">t.badge.svg</tspan>
 
-<tspan x="10" y="922"></tspan>
+<tspan x="10" y="954"></tspan>
 
-<tspan x="10" y="938"></tspan>
+<tspan x="10" y="970">buildApidoc - 0 failed tests</tspan>
 
-<tspan x="10" y="954">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:06:19.013Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="986"></tspan>
+
+<tspan x="10" y="1002"></tspan>
+
+<tspan x="10" y="1018">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:05:25.825Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
