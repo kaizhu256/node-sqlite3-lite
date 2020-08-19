@@ -7,6 +7,8 @@ this zero-dependency package will provide pre-built version of node-sqlite3 (v5.
 
 [![travis-ci.com build-status](https://api.travis-ci.com/kaizhu256/node-sqlite3-lite.svg)](https://travis-ci.com/kaizhu256/node-sqlite3-lite) [![coverage](https://kaizhu256.github.io/node-sqlite3-lite/build/coverage/coverage.badge.svg)](https://kaizhu256.github.io/node-sqlite3-lite/build/coverage/index.html)
 
+[![NPM](https://nodei.co/npm/sqlite3-lite.png?downloads=true)](https://www.npmjs.com/package/sqlite3-lite)
+
 [![build commit status](https://kaizhu256.github.io/node-sqlite3-lite/build/build.badge.svg)](https://travis-ci.com/kaizhu256/node-sqlite3-lite)
 
 | git-branch : | [master](https://github.com/kaizhu256/node-sqlite3-lite/tree/master) | [beta](https://github.com/kaizhu256/node-sqlite3-lite/tree/beta) | [alpha](https://github.com/kaizhu256/node-sqlite3-lite/tree/alpha)|
@@ -16,6 +18,8 @@ this zero-dependency package will provide pre-built version of node-sqlite3 (v5.
 | build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-sqlite3-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-sqlite3-lite/tree/gh-pages/build..master..travis-ci.com) | [![build-artifacts](https://kaizhu256.github.io/node-sqlite3-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-sqlite3-lite/tree/gh-pages/build..beta..travis-ci.com) | [![build-artifacts](https://kaizhu256.github.io/node-sqlite3-lite/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-sqlite3-lite/tree/gh-pages/build..alpha..travis-ci.com)|
 
 [![npmPackageListing](https://kaizhu256.github.io/node-sqlite3-lite/build/screenshot.npmPackageListing.svg)](https://github.com/kaizhu256/node-sqlite3-lite)
+
+![npmPackageDependencyTree](https://kaizhu256.github.io/node-sqlite3-lite/build/screenshot.npmPackageDependencyTree.svg)
 
 
 # table of contents
@@ -185,7 +189,7 @@ shBuildCiAfter () {(set -e
 )}
 
 shBuildCiBefore () {(set -e
-    # shNpmTestPublished
+    shNpmTestPublished
     shReadmeTest example.js
 )}
 
