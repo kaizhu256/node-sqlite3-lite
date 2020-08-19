@@ -1,4 +1,4 @@
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */

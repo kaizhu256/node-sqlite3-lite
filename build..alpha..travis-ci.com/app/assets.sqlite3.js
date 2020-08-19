@@ -1,13 +1,13 @@
 // usr/bin/env node
 /*
- * lib.sqlite3_lite.js (2020.8.19)
+ * lib.sqlite3.js (2020.8.19)
  * https://github.com/kaizhu256/node-sqlite3-lite
  * the greatest app in the world!
  *
  */
 
 
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */
@@ -204,13 +204,13 @@ local = (
 );
 // init exports
 if (local.isBrowser) {
-    globalThis.utility2_sqlite3_lite = local;
+    globalThis.utility2_sqlite3 = local;
 } else {
     module.exports = local;
     module.exports.__dirname = __dirname;
 }
 // init lib main
-local.sqlite3_lite = local;
+local.sqlite3 = local;
 
 
 /* validateLineSortedReset */

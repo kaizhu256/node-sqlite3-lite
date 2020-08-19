@@ -99,7 +99,7 @@ instruction
 */
 
 
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */
@@ -290,7 +290,7 @@ instruction
 // init local
 local = (
     globalThis.utility2_rollup
-    || globalThis.utility2_sqlite3_lite
+    || globalThis.utility2_sqlite3
     || globalThis.utility2_moduleExports
 );
 // init exports
@@ -788,7 +788,7 @@ utility2-comment -->\n\
 <script>window.utility2_onReadyBefore.cnt += 1;</script>\n\
 <script src="utility2.state.init.js"></script>\n\
 utility2-comment -->\n\
-<script src="assets.sqlite3_lite.js"></script>\n\
+<script src="assets.sqlite3.js"></script>\n\
 <script src="assets.example.js"></script>\n\
 <script src="assets.test.js"></script>\n\
 <script>\n\
@@ -811,10 +811,10 @@ utility2-comment -->\n\
 </html>\n\
 ';
 /* jslint ignore:end */
-local.assetsDict["/assets.sqlite3_lite.js"] = (
-    local.assetsDict["/assets.sqlite3_lite.js"]
+local.assetsDict["/assets.sqlite3.js"] = (
+    local.assetsDict["/assets.sqlite3.js"]
     || require("fs").readFileSync(
-        require("path").resolve(local.__dirname + "/lib.sqlite3_lite.js"),
+        require("path").resolve(local.__dirname + "/lib.sqlite3.js"),
         "utf8"
     ).replace((
         /^#!\//
@@ -832,7 +832,7 @@ local.assetsDict["/"] = local.assetsDict[
     case "npm_package_name":
         return "sqlite3-lite";
     case "npm_package_nameLib":
-        return "sqlite3_lite";
+        return "sqlite3";
     case "npm_package_version":
         return "0.0.1";
     default:

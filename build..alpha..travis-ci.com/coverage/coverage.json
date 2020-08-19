@@ -2129,7 +2129,7 @@
             }
         },
         "code": [
-            "/* istanbul instrument in package sqlite3_lite */",
+            "/* istanbul instrument in package sqlite3 */",
             "// assets.utility2.header.js - start",
             "/* jslint utility2:true */",
             "/* istanbul ignore next */",
@@ -2424,8 +2424,8 @@
             "201": 2
         }
     },
-    "/home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3_lite.js": {
-        "path": "/home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3_lite.js",
+    "/home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js": {
+        "path": "/home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js",
         "s": {
             "1": 2,
             "2": 2,
@@ -3796,7 +3796,7 @@
                 },
                 "end": {
                     "line": 207,
-                    "column": 45
+                    "column": 40
                 },
                 "skip": true
             },
@@ -3829,7 +3829,7 @@
                 },
                 "end": {
                     "line": 213,
-                    "column": 27
+                    "column": 22
                 },
                 "skip": true
             },
@@ -4587,14 +4587,14 @@
         "code": [
             "//#!/usr/bin/env node",
             "/*",
-            " * lib.sqlite3_lite.js (2020.8.19)",
+            " * lib.sqlite3.js (2020.8.19)",
             " * https://github.com/kaizhu256/node-sqlite3-lite",
             " * the greatest app in the world!",
             " *",
             " */",
             "",
             "",
-            "/* istanbul instrument in package sqlite3_lite */",
+            "/* istanbul instrument in package sqlite3 */",
             "// assets.utility2.header.js - start",
             "/* jslint utility2:true */",
             "/* istanbul ignore next */",
@@ -4791,13 +4791,13 @@
             ");",
             "// init exports",
             "if (local.isBrowser) {",
-            "    globalThis.utility2_sqlite3_lite = local;",
+            "    globalThis.utility2_sqlite3 = local;",
             "} else {",
             "    module.exports = local;",
             "    module.exports.__dirname = __dirname;",
             "}",
             "// init lib main",
-            "local.sqlite3_lite = local;",
+            "local.sqlite3 = local;",
             "",
             "",
             "/* validateLineSortedReset */",
@@ -6791,7 +6791,7 @@
                 },
                 "end": {
                     "line": 835,
-                    "column": 30
+                    "column": 25
                 },
                 "skip": true
             },
@@ -7741,7 +7741,7 @@
                         },
                         "end": {
                             "line": 293,
-                            "column": 39
+                            "column": 34
                         }
                     },
                     {
@@ -7907,7 +7907,7 @@
                         },
                         "end": {
                             "line": 815,
-                            "column": 47
+                            "column": 42
                         },
                         "skip": true
                     },
@@ -7957,7 +7957,7 @@
                         },
                         "end": {
                             "line": 835,
-                            "column": 30
+                            "column": 25
                         },
                         "skip": true
                     },
@@ -8312,7 +8312,7 @@
             "*/",
             "",
             "",
-            "/* istanbul instrument in package sqlite3_lite */",
+            "/* istanbul instrument in package sqlite3 */",
             "// assets.utility2.header.js - start",
             "/* jslint utility2:true */",
             "/* istanbul ignore next */",
@@ -8503,7 +8503,7 @@
             "// init local",
             "local = (",
             "    globalThis.utility2_rollup",
-            "    || globalThis.utility2_sqlite3_lite",
+            "    || globalThis.utility2_sqlite3",
             "    || globalThis.utility2_moduleExports",
             ");",
             "// init exports",
@@ -9001,7 +9001,7 @@
             "<script>window.utility2_onReadyBefore.cnt += 1;</script>\\n\\",
             "<script src=\"utility2.state.init.js\"></script>\\n\\",
             "utility2-comment -->\\n\\",
-            "<script src=\"assets.sqlite3_lite.js\"></script>\\n\\",
+            "<script src=\"assets.sqlite3.js\"></script>\\n\\",
             "<script src=\"assets.example.js\"></script>\\n\\",
             "<script src=\"assets.test.js\"></script>\\n\\",
             "<script>\\n\\",
@@ -9024,10 +9024,10 @@
             "</html>\\n\\",
             "';",
             "/* jslint ignore:end */",
-            "local.assetsDict[\"/assets.sqlite3_lite.js\"] = (",
-            "    local.assetsDict[\"/assets.sqlite3_lite.js\"]",
+            "local.assetsDict[\"/assets.sqlite3.js\"] = (",
+            "    local.assetsDict[\"/assets.sqlite3.js\"]",
             "    || require(\"fs\").readFileSync(",
-            "        require(\"path\").resolve(local.__dirname + \"/lib.sqlite3_lite.js\"),",
+            "        require(\"path\").resolve(local.__dirname + \"/lib.sqlite3.js\"),",
             "        \"utf8\"",
             "    ).replace((",
             "        /^#!\\//",
@@ -9045,7 +9045,7 @@
             "    case \"npm_package_name\":",
             "        return \"sqlite3-lite\";",
             "    case \"npm_package_nameLib\":",
-            "        return \"sqlite3_lite\";",
+            "        return \"sqlite3\";",
             "    case \"npm_package_version\":",
             "        return \"0.0.1\";",
             "    default:",

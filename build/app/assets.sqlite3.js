@@ -1,3 +1,12 @@
+// usr/bin/env node
+/*
+ * lib.sqlite3.js (2020.8.19)
+ * https://github.com/kaizhu256/node-sqlite3-lite
+ * the greatest app in the world!
+ *
+ */
+
+
 /* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
@@ -179,7 +188,6 @@
 // assets.utility2.header.js - end
 
 
-/* jslint utility2:true */
 (function (local) {
 "use strict";
 
@@ -188,16 +196,24 @@
 // run shared js-env code - init-before
 (function () {
 // init local
-local = globalThis.utility2 || require("utility2");
-local = local.requireReadme();
-globalThis.local = local;
-// init test
-local.testRunDefault(local);
-}());
+local = (
+    globalThis.utility2_rollup
+    // || globalThis.utility2_rollup_old
+    // || require("./assets.utility2.rollup.js")
+    || globalThis.globalLocal
+);
+// init exports
+if (local.isBrowser) {
+    globalThis.utility2_sqlite3 = local;
+} else {
+    module.exports = local;
+    module.exports.__dirname = __dirname;
+}
+// init lib main
+local.sqlite3 = local;
 
 
-// run shared js-env code - function
-(function () {
+/* validateLineSortedReset */
 return;
 }());
 }());

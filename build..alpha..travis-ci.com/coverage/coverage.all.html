@@ -362,8 +362,8 @@
     </tr>
 
     <tr>
-        <td class="file high" data-value="lib.sqlite3_lite.js">
-            <a href="lib.sqlite3_lite.js.html">lib.sqlite3_lite.js<br>
+        <td class="file high" data-value="lib.sqlite3.js">
+            <a href="lib.sqlite3.js.html">lib.sqlite3.js<br>
             <span class="cover-fill cover-full" style="width: 100px;"></span><span class="cover-empty" style="width: 0px;"></span></a>
         </td>
         <td>
@@ -2602,7 +2602,7 @@ instruction
 */
 
 
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */
@@ -2793,7 +2793,7 @@ instruction
 // init local
 local = (
     globalThis.utility2_rollup
-    || globalThis.utility2_sqlite3_lite
+    || globalThis.utility2_sqlite3
     || globalThis.utility2_moduleExports
 );
 // init exports
@@ -3291,7 +3291,7 @@ utility2-comment --&gt;\n\
 &lt;script&gt;window.utility2_onReadyBefore.cnt += 1;&lt;/script&gt;\n\
 &lt;script src="utility2.state.init.js"&gt;&lt;/script&gt;\n\
 utility2-comment --&gt;\n\
-&lt;script src="assets.sqlite3_lite.js"&gt;&lt;/script&gt;\n\
+&lt;script src="assets.sqlite3.js"&gt;&lt;/script&gt;\n\
 &lt;script src="assets.example.js"&gt;&lt;/script&gt;\n\
 &lt;script src="assets.test.js"&gt;&lt;/script&gt;\n\
 &lt;script&gt;\n\
@@ -3314,10 +3314,10 @@ utility2-comment --&gt;\n\
 &lt;/html&gt;\n\
 ';
 /* jslint ignore:end */
-local.assetsDict["/assets.sqlite3_lite.js"] = (
-    local.assetsDict["/assets.sqlite3_lite.js"]
+local.assetsDict["/assets.sqlite3.js"] = (
+    local.assetsDict["/assets.sqlite3.js"]
     || require("fs").readFileSync(
-        require("path").resolve(local.__dirname + "/lib.sqlite3_lite.js"),
+        require("path").resolve(local.__dirname + "/lib.sqlite3.js"),
         "utf8"
     ).replace((
         /^#!\//
@@ -3335,7 +3335,7 @@ local.assetsDict["/"] = local.assetsDict[
     case "npm_package_name":
         return "sqlite3-lite";
 <span class="branch-2 cbranch-skip" title="branch not covered">    case "npm_package_nameLib":</span>
-<span class="cstat-skip" title="statement not covered">        return "sqlite3_lite";</span>
+<span class="cstat-skip" title="statement not covered">        return "sqlite3";</span>
     case "npm_package_version":
         return "0.0.1";
     default:
@@ -3396,7 +3396,7 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
 <html lang="en" class="x-istanbul">
 
 <head>
-    <title>Code coverage report for lib.sqlite3_lite.js</title>
+    <title>Code coverage report for lib.sqlite3.js</title>
     <meta charset="utf-8">
 <style>
 /* jslint utility2:true */
@@ -3676,7 +3676,7 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
         <a href="https://github.com/kaizhu256/node-sqlite3-lite">sqlite3-lite (2020.8.19)</a>
     </h2>
 
-    <h2>Code coverage report for <span class="entity">lib.sqlite3_lite.js</span></h2>
+    <h2>Code coverage report for <span class="entity">lib.sqlite3.js</span></h2>
     <table class="tableHeader">
     <thead>
     <tr>
@@ -3711,7 +3711,7 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
         </td>
     </tbody>
     </table>
-    <div class="path"><a href="index.html">All files</a> &#187; lib.sqlite3_lite.js</div>
+    <div class="path"><a href="index.html">All files</a> &#187; lib.sqlite3.js</div>
 </div>
 <div class="body">
 
@@ -4159,14 +4159,14 @@ local.assetsDict["/assets.example.html"] = local.assetsDict["/"];
         <td class="text"><pre class="prettyprint lang-js" tabIndex="0">
 //#!/usr/bin/env node
 /*
- * lib.sqlite3_lite.js (2020.8.19)
+ * lib.sqlite3.js (2020.8.19)
  * https://github.com/kaizhu256/node-sqlite3-lite
  * the greatest app in the world!
  *
  */
 
 
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */
@@ -4363,13 +4363,13 @@ local = (
 );
 // init exports
 if (local.isBrowser) {
-    globalThis.utility2_sqlite3_lite = local;
+    globalThis.utility2_sqlite3 = local;
 } else {
     module.exports = local;
     module.exports.__dirname = __dirname;
 }
 // init lib main
-local.sqlite3_lite = local;
+local.sqlite3 = local;
 
 
 /* validateLineSortedReset */
@@ -5125,7 +5125,7 @@ return;
 <span class="cline-any cline-neutral">&nbsp;</span>
 </td>
         <td class="text"><pre class="prettyprint lang-js" tabIndex="0">
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */
