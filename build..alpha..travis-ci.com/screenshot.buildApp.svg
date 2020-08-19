@@ -1,9 +1,9 @@
-<svg height="2046" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2046" fill="#555" width="720"></rect>
+<svg height="2078" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2078" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApp]\x1b[0m - 2020-08-19T20:19:19.167Z - npm-testing /home/travis/build\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApp]\x1b[0m - 2020-08-19T20:29:06.232Z - npm-testing /home/travis/build\</tspan>
 <tspan x="10" y="58">/kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/buil\</tspan>
 <tspan x="10" y="122">d/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 56000</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 44909</tspan>
 
 <tspan x="10" y="154">1: Ipsum 0</tspan>
 
@@ -53,177 +53,181 @@
 <tspan x="10" y="458">buildApp - replace-skipped - "\\n\\/\\*\ jslint\ ignore:start\ \\*\\/\\nlocal.assetsDict\\[\"\\/\</tspan>
 <tspan x="10" y="474">assets.index.template.html\"\\]\ =\ '\\\\\\n[\\S\\s]*?\\n\\/\\*\ jslint\ ignore:end\ \\*\\/\\n"</tspan>
 
-<tspan x="10" y="490">buildApp - replace-unmatched - "$ npm install sqlite3-lite"</tspan>
+<tspan x="10" y="490">buildApp - replace-skipped - "$ npm install sqlite3-lite"</tspan>
 
-<tspan x="10" y="506">buildApp - replace-skipped - "    // || globalThis.utility2_rollup_old"</tspan>
+<tspan x="10" y="506">buildApp - replace-skipped - "\\n.*?\\bhttps:\\/\\/www.npmjs.com\\/package\\/.*?\\n"</tspan>
 
-<tspan x="10" y="522">buildApp - replace-skipped - "    // || require(\"./assets.utility2.rollup.js\")"</tspan>
+<tspan x="10" y="522">buildApp - replace-skipped - "\\n.*?npmPackageDependencyTree.*?\\n"</tspan>
 
-<tspan x="10" y="538">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="538">buildApp - replace-skipped - "    // || globalThis.utility2_rollup_old"</tspan>
 
-<tspan x="10" y="554">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
+<tspan x="10" y="554">buildApp - replace-skipped - "    // || require(\"./assets.utility2.rollup.js\")"</tspan>
 
-<tspan x="10" y="570">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="570">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="586"></tspan>
+<tspan x="10" y="586">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
 
-<tspan x="10" y="602">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/buil\</tspan>
-<tspan x="10" y="618">d/test-report.json</tspan>
+<tspan x="10" y="602">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
-<tspan x="10" y="634">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="618"></tspan>
 
-<tspan x="10" y="650">jslint - 25ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
+<tspan x="10" y="634">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/buil\</tspan>
+<tspan x="10" y="650">d/test-report.json</tspan>
 
-<tspan x="10" y="666">jslint - 27ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="666">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app.standalone/asse\</tspan>
+<tspan x="10" y="682">ts.app.js</tspan>
 
-<tspan x="10" y="682">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app.standalone/asse\</tspan>
-<tspan x="10" y="698">ts.app.js</tspan>
+<tspan x="10" y="698">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.\</tspan>
+<tspan x="10" y="714">css</tspan>
 
-<tspan x="10" y="714">jslint - 31ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="730">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.\</tspan>
+<tspan x="10" y="746">html</tspan>
 
-<tspan x="10" y="730">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.\</tspan>
-<tspan x="10" y="746">css</tspan>
-
-<tspan x="10" y="762">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.\</tspan>
+<tspan x="10" y="762">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.\</tspan>
 <tspan x="10" y="778">html</tspan>
 
 <tspan x="10" y="794">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.\</tspan>
-<tspan x="10" y="810">html</tspan>
+<tspan x="10" y="810">js</tspan>
 
-<tspan x="10" y="826">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.\</tspan>
+<tspan x="10" y="826">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.\</tspan>
 <tspan x="10" y="842">js</tspan>
 
-<tspan x="10" y="858">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.\</tspan>
-<tspan x="10" y="874">js</tspan>
+<tspan x="10" y="858">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.test.js</tspan>
 
-<tspan x="10" y="890">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.test.js</tspan>
+<tspan x="10" y="874">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2\</tspan>
+<tspan x="10" y="890">.html</tspan>
 
-<tspan x="10" y="906">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2\</tspan>
-<tspan x="10" y="922">.html</tspan>
+<tspan x="10" y="906">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.html</tspan>
 
-<tspan x="10" y="938">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.html</tspan>
+<tspan x="10" y="922">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.rollup.ht\</tspan>
+<tspan x="10" y="938">ml</tspan>
 
-<tspan x="10" y="954">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.rollup.ht\</tspan>
-<tspan x="10" y="970">ml</tspan>
+<tspan x="10" y="954">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/utility2.state.\</tspan>
+<tspan x="10" y="970">init.js</tspan>
 
-<tspan x="10" y="986">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/utility2.state.\</tspan>
-<tspan x="10" y="1002">init.js</tspan>
+<tspan x="10" y="986">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/undefined</tspan>
 
-<tspan x="10" y="1018">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/undefined</tspan>
+<tspan x="10" y="1002">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/LICENSE</tspan>
 
-<tspan x="10" y="1034">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/LICENSE</tspan>
+<tspan x="10" y="1018">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2\</tspan>
+<tspan x="10" y="1034">.lib.jslint.js</tspan>
 
-<tspan x="10" y="1050">jslint - 62ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="1050">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2\</tspan>
+<tspan x="10" y="1066">.rollup.js</tspan>
 
-<tspan x="10" y="1066">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2\</tspan>
-<tspan x="10" y="1082">.lib.jslint.js</tspan>
+<tspan x="10" y="1082">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.app.js</tspan>
 
-<tspan x="10" y="1098">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2\</tspan>
-<tspan x="10" y="1114">.rollup.js</tspan>
+<tspan x="10" y="1098">jslint - 2ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="1130">buildApp - wrote - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.app.js</tspan>
+<tspan x="10" y="1114">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
 
-<tspan x="10" y="1146">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.html</tspan>
+<tspan x="10" y="1130">jslint - 24ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="1162">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.js</tspan>
+<tspan x="10" y="1146">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="1178">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.css</tspan>
+<tspan x="10" y="1162">jslint - 35ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
-<tspan x="10" y="1194">jslint - 30ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.htm\</tspan>
-<tspan x="10" y="1210">l</tspan>
+<tspan x="10" y="1178">jslint - 4ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.html</tspan>
 
-<tspan x="10" y="1226">jslint - 45ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.js</tspan>
+<tspan x="10" y="1194">jslint - 19ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.example.js</tspan>
 
-<tspan x="10" y="1242">jslint - 58ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.test.js</tspan>
+<tspan x="10" y="1210">jslint - 19ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.css</tspan>
 
-<tspan x="10" y="1258">jslint - 61ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.ht\</tspan>
-<tspan x="10" y="1274">ml</tspan>
+<tspan x="10" y="1226">jslint - 21ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.htm\</tspan>
+<tspan x="10" y="1242">l</tspan>
 
-<tspan x="10" y="1290">jslint - 64ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.html</tspan>
+<tspan x="10" y="1258">jslint - 35ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.sqlite3.js</tspan>
 
-<tspan x="10" y="1306">jslint - 67ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/utility2.state.ini\</tspan>
-<tspan x="10" y="1322">t.js</tspan>
+<tspan x="10" y="1274">jslint - 51ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.test.js</tspan>
 
-<tspan x="10" y="1338">&gt; http-server listening on port 51827</tspan>
+<tspan x="10" y="1290">jslint - 51ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.ht\</tspan>
+<tspan x="10" y="1306">ml</tspan>
 
-<tspan x="10" y="1354">1: Ipsum 0</tspan>
+<tspan x="10" y="1322">jslint - 51ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/index.html</tspan>
 
-<tspan x="10" y="1370">2: Ipsum 1</tspan>
+<tspan x="10" y="1338">jslint - 51ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/utility2.state.ini\</tspan>
+<tspan x="10" y="1354">t.js</tspan>
 
-<tspan x="10" y="1386">3: Ipsum 2</tspan>
+<tspan x="10" y="1370">&gt; http-server listening on port 52469</tspan>
 
-<tspan x="10" y="1402">4: Ipsum 3</tspan>
+<tspan x="10" y="1386">1: Ipsum 0</tspan>
 
-<tspan x="10" y="1418">5: Ipsum 4</tspan>
+<tspan x="10" y="1402">2: Ipsum 1</tspan>
 
-<tspan x="10" y="1434">6: Ipsum 5</tspan>
+<tspan x="10" y="1418">3: Ipsum 2</tspan>
 
-<tspan x="10" y="1450">7: Ipsum 6</tspan>
+<tspan x="10" y="1434">4: Ipsum 3</tspan>
 
-<tspan x="10" y="1466">8: Ipsum 7</tspan>
+<tspan x="10" y="1450">5: Ipsum 4</tspan>
 
-<tspan x="10" y="1482">9: Ipsum 8</tspan>
+<tspan x="10" y="1466">6: Ipsum 5</tspan>
 
-<tspan x="10" y="1498">10: Ipsum 9</tspan>
+<tspan x="10" y="1482">7: Ipsum 6</tspan>
 
-<tspan x="10" y="1514">jslint - 268ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.l\</tspan>
-<tspan x="10" y="1530">ib.jslint.js</tspan>
+<tspan x="10" y="1498">8: Ipsum 7</tspan>
 
-<tspan x="10" y="1546">testRunDefault - 6295 ms - testCase pending - testCase_buildApp_default ...</tspan>
+<tspan x="10" y="1514">9: Ipsum 8</tspan>
 
-<tspan x="10" y="1562">testRunDefault - 8656 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="1530">10: Ipsum 9</tspan>
 
-<tspan x="10" y="1578">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1594">t.json</tspan>
+<tspan x="10" y="1546">jslint - 228ms - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/app/assets.utility2.l\</tspan>
+<tspan x="10" y="1562">ib.jslint.js</tspan>
 
-<tspan x="10" y="1610"></tspan>
+<tspan x="10" y="1578">testRunDefault - 11089 ms - testCase pending - testCase_buildApp_default ...</tspan>
 
-<tspan x="10" y="1626">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/buil\</tspan>
-<tspan x="10" y="1642">d/test-report.json</tspan>
+<tspan x="10" y="1594">testRunDefault - 11511 ms - [node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="1658"></tspan>
+<tspan x="10" y="1610">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="1626">t.json</tspan>
 
-<tspan x="10" y="1674">-------------------------------------------------------</tspan>
+<tspan x="10" y="1642"></tspan>
 
-<tspan x="10" y="1690">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T20:19:14.927Z</tspan>
+<tspan x="10" y="1658">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/buil\</tspan>
+<tspan x="10" y="1674">d/test-report.json</tspan>
 
-<tspan x="10" y="1706">|    8656 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="1690"></tspan>
 
-<tspan x="10" y="1722">-------------------------------------------------------</tspan>
+<tspan x="10" y="1706">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1738">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="1754">L, like Gecko) HeadlessChrome/84.0.4147.135 Safari/537.36 - 2020-08-19T20:19:10.408Z</tspan>
+<tspan x="10" y="1722">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T20:28:59.245Z</tspan>
 
-<tspan x="10" y="1770">|       9 ms            0 failed        2 passed      |</tspan>
+<tspan x="10" y="1738">|   11512 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="1786">-------------------------------------------------------</tspan>
+<tspan x="10" y="1754">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1802">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T20:19:09.238Z</tspan>
+<tspan x="10" y="1770">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="1786">L, like Gecko) HeadlessChrome/84.0.4147.135 Safari/537.36 - 2020-08-19T20:28:54.819Z</tspan>
 
-<tspan x="10" y="1818">|    4465 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="1802">|       9 ms            0 failed        2 passed      |</tspan>
 
-<tspan x="10" y="1834">-------------------------------------------------------</tspan>
+<tspan x="10" y="1818">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1850"></tspan>
+<tspan x="10" y="1834">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T20:28:53.619Z</tspan>
 
-<tspan x="10" y="1866">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1882">t.html</tspan>
+<tspan x="10" y="1850">|    4336 ms            0 failed        4 passed      |</tspan>
 
-<tspan x="10" y="1898">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
-<tspan x="10" y="1914">e.svg</tspan>
+<tspan x="10" y="1866">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1930">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1946">t.badge.svg</tspan>
+<tspan x="10" y="1882"></tspan>
 
-<tspan x="10" y="1962"></tspan>
+<tspan x="10" y="1898">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="1914">t.html</tspan>
 
-<tspan x="10" y="1978">buildApp - 0 failed tests</tspan>
+<tspan x="10" y="1930">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
+<tspan x="10" y="1946">e.svg</tspan>
+
+<tspan x="10" y="1962">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="1978">t.badge.svg</tspan>
 
 <tspan x="10" y="1994"></tspan>
 
-<tspan x="10" y="2010"></tspan>
+<tspan x="10" y="2010">buildApp - 0 failed tests</tspan>
 
-<tspan x="10" y="2026">\x1b[35m[MODE_BUILD=buildApp]\x1b[0m - 2020-08-19T20:19:23.865Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2026"></tspan>
+
+<tspan x="10" y="2042"></tspan>
+
+<tspan x="10" y="2058">\x1b[35m[MODE_BUILD=buildApp]\x1b[0m - 2020-08-19T20:29:10.987Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
