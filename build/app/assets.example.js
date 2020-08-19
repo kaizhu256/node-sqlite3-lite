@@ -57,12 +57,10 @@
 
 
 
-
-
 /*
 example.js
 
-this script will run web-demo of sqlite3-lite
+this script will run node-demo of sqlite3-lite
 
 instruction
     1. save this script as example.js
