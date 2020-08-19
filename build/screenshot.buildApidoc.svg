@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:24:07.254Z - npm-testing /home/travis/bu\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T06:02:17.341Z - npm-testing /home/travis/bu\</tspan>
 <tspan x="10" y="58">ild/kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 38997</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 34715</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
@@ -46,17 +46,17 @@
 
 <tspan x="10" y="394">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="410">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
+<tspan x="10" y="410">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
 
-<tspan x="10" y="426">jslint - 27ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="426">jslint - 30ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="442">jslint - 32ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="442">jslint - 34ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="458">jslint - 47ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="458">jslint - 44ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
 <tspan x="10" y="474">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
 
-<tspan x="10" y="490">testRunDefault - 195 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="490">testRunDefault - 264 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
 <tspan x="10" y="506">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
 <tspan x="10" y="522">t.json</tspan>
@@ -70,22 +70,22 @@
 
 <tspan x="10" y="602">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="618">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T05:24:07.343Z</tspan>
+<tspan x="10" y="618">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T06:02:17.438Z</tspan>
 
-<tspan x="10" y="634">|     196 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="634">|     267 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="650">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="666">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="682">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:24:02.532Z</tspan>
+<tspan x="10" y="682">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T06:02:12.446Z</tspan>
 
-<tspan x="10" y="698">|      15 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="698">|      23 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="714">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="730">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T05:24:01.616Z</tspan>
+<tspan x="10" y="730">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T06:02:11.410Z</tspan>
 
-<tspan x="10" y="746">|    4524 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="746">|    4656 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="762">-------------------------------------------------------</tspan>
 
@@ -108,7 +108,7 @@
 
 <tspan x="10" y="938"></tspan>
 
-<tspan x="10" y="954">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:24:07.787Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="954">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T06:02:17.958Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

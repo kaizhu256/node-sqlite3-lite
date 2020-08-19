@@ -72408,7 +72408,281 @@ local.sqlite3 = local;\n\
 \n\
 \n\
 /* validateLineSortedReset */\n\
-return;\n\
+/*\n\
+ * shell-command to download-and-install prebuilt-binary:\n\
+node lib.sqlite3.js install\n\
+ */\n\
+if (local.isBrowser) {\n\
+    return;\n\
+}\n\
+if (\n\
+    module === require.main\n\
+    && process.argv[2] === \"install\"\n\
+    && require(\"path\").basename(process.argv[1]) === \"lib.sqlite3.js\"\n\
+) {\n\
+    let file;\n\
+    file = \"napi-v3-\" + process.platform + \"-\" + process.arch;\n\
+    console.error(\n\
+        \"downloading \"\n\
+        + \"https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/\"\n\
+        + file + \".tar.gz\"\n\
+    );\n\
+    require(\"child_process\").spawnSync((\n\
+        \"curl -A \\\"chrome\\\" -Lf \"\n\
+        + \"https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/\"\n\
+        + file + \".tar.gz \"\n\
+        + \"| tar -O -xz \" + file + \"/node_sqlite3.node \"\n\
+        + \"> .node_sqlite3-v5.0.0-\" + file + \".node\"\n\
+    ), {\n\
+        encoding: \"utf8\",\n\
+        shell: true,\n\
+        stdio: [\n\
+            \"ignore\", 1, 2\n\
+        ]\n\
+    });\n\
+    return;\n\
+}\n\
+/* jslint ignore:start */\n\
+/*\n\
+repo https://github.com/mapbox/node-sqlite3/tree/v5.0.0\n\
+committed 2020-06-02T12:27:30Z\n\
+*/\n\
+\n\
+\n\
+/*\n\
+file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/sqlite3-binding.js\n\
+*/\n\
+\n\
+\n\
+/*\n\
+file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/sqlite3.js\n\
+*/\n\
+var path = require('path');\n\
+// hack-sqlite3 - fallback-dummy-module\n\
+var sqlite3 = {\n\
+    Backup: function () {},\n\
+    Database: function () {},\n\
+    Statement: function () {}\n\
+};\n\
+try {\n\
+    sqlite3 = require(\n\
+        \"./.node_sqlite3-v5.0.0-napi-v3-\"\n\
+        + process.platform + \"-\" + process.arch\n\
+        + \".node\"\n\
+    );\n\
+} catch (ignore) {}\n\
+var EventEmitter = require('events').EventEmitter;\n\
+// hack-sqlite3 - custom exports\n\
+// module.exports = exports = sqlite3;\n\
+\n\
+function normalizeMethod (fn) {\n\
+    return function (sql) {\n\
+        var errBack;\n\
+        var args = Array.prototype.slice.call(arguments, 1);\n\
+        if (typeof args[args.length - 1] === 'function') {\n\
+            var callback = args[args.length - 1];\n\
+            errBack = function(err) {\n\
+                if (err) {\n\
+                    callback(err);\n\
+                }\n\
+            };\n\
+        }\n\
+        var statement = new Statement(this, sql, errBack);\n\
+        return fn.call(this, statement, args);\n\
+    };\n\
+}\n\
+\n\
+function inherits(target, source) {\n\
+    for (var k in source.prototype)\n\
+        target.prototype[k] = source.prototype[k];\n\
+}\n\
+\n\
+sqlite3.cached = {\n\
+    Database: function(file, a, b) {\n\
+        if (file === '' || file === ':memory:') {\n\
+            // Don't cache special databases.\n\
+            return new Database(file, a, b);\n\
+        }\n\
+\n\
+        var db;\n\
+        file = path.resolve(file);\n\
+        function cb() { callback.call(db, null); }\n\
+\n\
+        if (!sqlite3.cached.objects[file]) {\n\
+            db = sqlite3.cached.objects[file] = new Database(file, a, b);\n\
+        }\n\
+        else {\n\
+            // Make sure the callback is called.\n\
+            db = sqlite3.cached.objects[file];\n\
+            var callback = (typeof a === 'number') ? b : a;\n\
+            if (typeof callback === 'function') {\n\
+                if (db.open) process.nextTick(cb);\n\
+                else db.once('open', cb);\n\
+            }\n\
+        }\n\
+\n\
+        return db;\n\
+    },\n\
+    objects: {}\n\
+};\n\
+\n\
+\n\
+var Database = sqlite3.Database;\n\
+var Statement = sqlite3.Statement;\n\
+var Backup = sqlite3.Backup;\n\
+\n\
+inherits(Database, EventEmitter);\n\
+inherits(Statement, EventEmitter);\n\
+inherits(Backup, EventEmitter);\n\
+\n\
+// Database#prepare(sql, [bind1, bind2, ...], [callback])\n\
+Database.prototype.prepare = normalizeMethod(function(statement, params) {\n\
+    return params.length\n\
+        ? statement.bind.apply(statement, params)\n\
+        : statement;\n\
+});\n\
+\n\
+// Database#run(sql, [bind1, bind2, ...], [callback])\n\
+Database.prototype.run = normalizeMethod(function(statement, params) {\n\
+    statement.run.apply(statement, params).finalize();\n\
+    return this;\n\
+});\n\
+\n\
+// Database#get(sql, [bind1, bind2, ...], [callback])\n\
+Database.prototype.get = normalizeMethod(function(statement, params) {\n\
+    statement.get.apply(statement, params).finalize();\n\
+    return this;\n\
+});\n\
+\n\
+// Database#all(sql, [bind1, bind2, ...], [callback])\n\
+Database.prototype.all = normalizeMethod(function(statement, params) {\n\
+    statement.all.apply(statement, params).finalize();\n\
+    return this;\n\
+});\n\
+\n\
+// Database#each(sql, [bind1, bind2, ...], [callback], [complete])\n\
+Database.prototype.each = normalizeMethod(function(statement, params) {\n\
+    statement.each.apply(statement, params).finalize();\n\
+    return this;\n\
+});\n\
+\n\
+Database.prototype.map = normalizeMethod(function(statement, params) {\n\
+    statement.map.apply(statement, params).finalize();\n\
+    return this;\n\
+});\n\
+\n\
+// Database#backup(filename, [callback])\n\
+// Database#backup(filename, destName, sourceName, filenameIsDest, [callback])\n\
+Database.prototype.backup = function() {\n\
+    var backup;\n\
+    if (arguments.length <= 2) {\n\
+        // By default, we write the main database out to the main database of the named file.\n\
+        // This is the most likely use of the backup api.\n\
+        backup = new Backup(this, arguments[0], 'main', 'main', true, arguments[1]);\n\
+    } else {\n\
+        // Otherwise, give the user full control over the sqlite3_backup_init arguments.\n\
+        backup = new Backup(this, arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]);\n\
+    }\n\
+    // Per the sqlite docs, exclude the following errors as non-fatal by default.\n\
+    backup.retryErrors = [sqlite3.BUSY, sqlite3.LOCKED];\n\
+    return backup;\n\
+};\n\
+\n\
+Statement.prototype.map = function() {\n\
+    var params = Array.prototype.slice.call(arguments);\n\
+    var callback = params.pop();\n\
+    params.push(function(err, rows) {\n\
+        if (err) return callback(err);\n\
+        var result = {};\n\
+        if (rows.length) {\n\
+            var keys = Object.keys(rows[0]), key = keys[0];\n\
+            if (keys.length > 2) {\n\
+                // Value is an object\n\
+                for (var i = 0; i < rows.length; i++) {\n\
+                    result[rows[i][key]] = rows[i];\n\
+                }\n\
+            } else {\n\
+                var value = keys[1];\n\
+                // Value is a plain value\n\
+                for (i = 0; i < rows.length; i++) {\n\
+                    result[rows[i][key]] = rows[i][value];\n\
+                }\n\
+            }\n\
+        }\n\
+        callback(err, result);\n\
+    });\n\
+    return this.all.apply(this, params);\n\
+};\n\
+\n\
+var isVerbose = false;\n\
+\n\
+var supportedEvents = [ 'trace', 'profile', 'insert', 'update', 'delete' ];\n\
+\n\
+Database.prototype.addListener = Database.prototype.on = function(type) {\n\
+    var val = EventEmitter.prototype.addListener.apply(this, arguments);\n\
+    if (supportedEvents.indexOf(type) >= 0) {\n\
+        this.configure(type, true);\n\
+    }\n\
+    return val;\n\
+};\n\
+\n\
+Database.prototype.removeListener = function(type) {\n\
+    var val = EventEmitter.prototype.removeListener.apply(this, arguments);\n\
+    if (supportedEvents.indexOf(type) >= 0 && !this._events[type]) {\n\
+        this.configure(type, false);\n\
+    }\n\
+    return val;\n\
+};\n\
+\n\
+Database.prototype.removeAllListeners = function(type) {\n\
+    var val = EventEmitter.prototype.removeAllListeners.apply(this, arguments);\n\
+    if (supportedEvents.indexOf(type) >= 0) {\n\
+        this.configure(type, false);\n\
+    }\n\
+    return val;\n\
+};\n\
+\n\
+// Save the stack trace over EIO callbacks.\n\
+sqlite3.verbose = function() {\n\
+    if (!isVerbose) {\n\
+        var trace = require('./trace');\n\
+        [\n\
+            'prepare',\n\
+            'get',\n\
+            'run',\n\
+            'all',\n\
+            'each',\n\
+            'map',\n\
+            'close',\n\
+            'exec'\n\
+        ].forEach(function (name) {\n\
+            trace.extendTrace(Database.prototype, name);\n\
+        });\n\
+        [\n\
+            'bind',\n\
+            'get',\n\
+            'run',\n\
+            'all',\n\
+            'each',\n\
+            'map',\n\
+            'reset',\n\
+            'finalize',\n\
+        ].forEach(function (name) {\n\
+            trace.extendTrace(Statement.prototype, name);\n\
+        });\n\
+        isVerbose = true;\n\
+    }\n\
+\n\
+    return this;\n\
+};\n\
+\n\
+\n\
+/*\n\
+file none\n\
+*/\n\
+local.Sqlite3Database = Database;\n\
+local.Sqlite3Statement = Statement;\n\
+/* jslint ignore:end */\n\
 }());\n\
 }());\n\
 ");
@@ -72628,7 +72902,281 @@ local.sqlite3 = local;
 
 
 /* validateLineSortedReset */
-return;
+/*
+ * shell-command to download-and-install prebuilt-binary:
+node lib.sqlite3.js install
+ */
+if (local.isBrowser) {
+    return;
+}
+if (
+    module === require.main
+    && process.argv[2] === "install"
+    && require("path").basename(process.argv[1]) === "lib.sqlite3.js"
+) {
+    let file;
+    file = "napi-v3-" + process.platform + "-" + process.arch;
+    console.error(
+        "downloading "
+        + "https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/"
+        + file + ".tar.gz"
+    );
+    require("child_process").spawnSync((
+        "curl -A \"chrome\" -Lf "
+        + "https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/"
+        + file + ".tar.gz "
+        + "| tar -O -xz " + file + "/node_sqlite3.node "
+        + "> .node_sqlite3-v5.0.0-" + file + ".node"
+    ), {
+        encoding: "utf8",
+        shell: true,
+        stdio: [
+            "ignore", 1, 2
+        ]
+    });
+    return;
+}
+/* jslint ignore:start */
+/*
+repo https://github.com/mapbox/node-sqlite3/tree/v5.0.0
+committed 2020-06-02T12:27:30Z
+*/
+
+
+/*
+file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/sqlite3-binding.js
+*/
+
+
+/*
+file https://github.com/mapbox/node-sqlite3/blob/v5.0.0/lib/sqlite3.js
+*/
+var path = require('path');
+// hack-sqlite3 - fallback-dummy-module
+var sqlite3 = {
+    Backup: function () {},
+    Database: function () {},
+    Statement: function () {}
+};
+try {
+    sqlite3 = require(
+        "./.node_sqlite3-v5.0.0-napi-v3-"
+        + process.platform + "-" + process.arch
+        + ".node"
+    );
+} catch (ignore) {}
+var EventEmitter = require('events').EventEmitter;
+// hack-sqlite3 - custom exports
+// module.exports = exports = sqlite3;
+
+function normalizeMethod (fn) {
+    return function (sql) {
+        var errBack;
+        var args = Array.prototype.slice.call(arguments, 1);
+        if (typeof args[args.length - 1] === 'function') {
+            var callback = args[args.length - 1];
+            errBack = function(err) {
+                if (err) {
+                    callback(err);
+                }
+            };
+        }
+        var statement = new Statement(this, sql, errBack);
+        return fn.call(this, statement, args);
+    };
+}
+
+function inherits(target, source) {
+    for (var k in source.prototype)
+        target.prototype[k] = source.prototype[k];
+}
+
+sqlite3.cached = {
+    Database: function(file, a, b) {
+        if (file === '' || file === ':memory:') {
+            // Don't cache special databases.
+            return new Database(file, a, b);
+        }
+
+        var db;
+        file = path.resolve(file);
+        function cb() { callback.call(db, null); }
+
+        if (!sqlite3.cached.objects[file]) {
+            db = sqlite3.cached.objects[file] = new Database(file, a, b);
+        }
+        else {
+            // Make sure the callback is called.
+            db = sqlite3.cached.objects[file];
+            var callback = (typeof a === 'number') ? b : a;
+            if (typeof callback === 'function') {
+                if (db.open) process.nextTick(cb);
+                else db.once('open', cb);
+            }
+        }
+
+        return db;
+    },
+    objects: {}
+};
+
+
+var Database = sqlite3.Database;
+var Statement = sqlite3.Statement;
+var Backup = sqlite3.Backup;
+
+inherits(Database, EventEmitter);
+inherits(Statement, EventEmitter);
+inherits(Backup, EventEmitter);
+
+// Database#prepare(sql, [bind1, bind2, ...], [callback])
+Database.prototype.prepare = normalizeMethod(function(statement, params) {
+    return params.length
+        ? statement.bind.apply(statement, params)
+        : statement;
+});
+
+// Database#run(sql, [bind1, bind2, ...], [callback])
+Database.prototype.run = normalizeMethod(function(statement, params) {
+    statement.run.apply(statement, params).finalize();
+    return this;
+});
+
+// Database#get(sql, [bind1, bind2, ...], [callback])
+Database.prototype.get = normalizeMethod(function(statement, params) {
+    statement.get.apply(statement, params).finalize();
+    return this;
+});
+
+// Database#all(sql, [bind1, bind2, ...], [callback])
+Database.prototype.all = normalizeMethod(function(statement, params) {
+    statement.all.apply(statement, params).finalize();
+    return this;
+});
+
+// Database#each(sql, [bind1, bind2, ...], [callback], [complete])
+Database.prototype.each = normalizeMethod(function(statement, params) {
+    statement.each.apply(statement, params).finalize();
+    return this;
+});
+
+Database.prototype.map = normalizeMethod(function(statement, params) {
+    statement.map.apply(statement, params).finalize();
+    return this;
+});
+
+// Database#backup(filename, [callback])
+// Database#backup(filename, destName, sourceName, filenameIsDest, [callback])
+Database.prototype.backup = function() {
+    var backup;
+    if (arguments.length <= 2) {
+        // By default, we write the main database out to the main database of the named file.
+        // This is the most likely use of the backup api.
+        backup = new Backup(this, arguments[0], 'main', 'main', true, arguments[1]);
+    } else {
+        // Otherwise, give the user full control over the sqlite3_backup_init arguments.
+        backup = new Backup(this, arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]);
+    }
+    // Per the sqlite docs, exclude the following errors as non-fatal by default.
+    backup.retryErrors = [sqlite3.BUSY, sqlite3.LOCKED];
+    return backup;
+};
+
+Statement.prototype.map = function() {
+    var params = Array.prototype.slice.call(arguments);
+    var callback = params.pop();
+    params.push(function(err, rows) {
+        if (err) return callback(err);
+        var result = {};
+        if (rows.length) {
+            var keys = Object.keys(rows[0]), key = keys[0];
+            if (keys.length > 2) {
+                // Value is an object
+                for (var i = 0; i < rows.length; i++) {
+                    result[rows[i][key]] = rows[i];
+                }
+            } else {
+                var value = keys[1];
+                // Value is a plain value
+                for (i = 0; i < rows.length; i++) {
+                    result[rows[i][key]] = rows[i][value];
+                }
+            }
+        }
+        callback(err, result);
+    });
+    return this.all.apply(this, params);
+};
+
+var isVerbose = false;
+
+var supportedEvents = [ 'trace', 'profile', 'insert', 'update', 'delete' ];
+
+Database.prototype.addListener = Database.prototype.on = function(type) {
+    var val = EventEmitter.prototype.addListener.apply(this, arguments);
+    if (supportedEvents.indexOf(type) >= 0) {
+        this.configure(type, true);
+    }
+    return val;
+};
+
+Database.prototype.removeListener = function(type) {
+    var val = EventEmitter.prototype.removeListener.apply(this, arguments);
+    if (supportedEvents.indexOf(type) >= 0 && !this._events[type]) {
+        this.configure(type, false);
+    }
+    return val;
+};
+
+Database.prototype.removeAllListeners = function(type) {
+    var val = EventEmitter.prototype.removeAllListeners.apply(this, arguments);
+    if (supportedEvents.indexOf(type) >= 0) {
+        this.configure(type, false);
+    }
+    return val;
+};
+
+// Save the stack trace over EIO callbacks.
+sqlite3.verbose = function() {
+    if (!isVerbose) {
+        var trace = require('./trace');
+        [
+            'prepare',
+            'get',
+            'run',
+            'all',
+            'each',
+            'map',
+            'close',
+            'exec'
+        ].forEach(function (name) {
+            trace.extendTrace(Database.prototype, name);
+        });
+        [
+            'bind',
+            'get',
+            'run',
+            'all',
+            'each',
+            'map',
+            'reset',
+            'finalize',
+        ].forEach(function (name) {
+            trace.extendTrace(Statement.prototype, name);
+        });
+        isVerbose = true;
+    }
+
+    return this;
+};
+
+
+/*
+file none
+*/
+local.Sqlite3Database = Database;
+local.Sqlite3Statement = Statement;
+/* jslint ignore:end */
 }());
 }());
 
