@@ -1,0 +1,671 @@
+
+<!doctype html>
+<html lang="en" class="x-istanbul">
+
+<head>
+    <title>Code coverage report for example.js</title>
+    <meta charset="utf-8">
+<style>
+/* jslint utility2:true */
+/*csslint
+    box-model: false,
+    important: false,
+*/
+/* csslint ignore:start */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+/* csslint ignore:end */
+.x-istanbul {
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+.x-istanbul pre {
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    tab-size: 2;
+}
+.x-istanbul .cbranch-no {
+    background: yellow !important;
+    color: #111;
+}
+.x-istanbul .cbranch-skip {
+    background: #ddd !important;
+    color: #111;
+}
+.x-istanbul .com {
+    color: #999 !important;
+}
+.x-istanbul .cover-empty,
+.x-istanbul .cover-fill {
+    background: white;
+    border: 1px solid #999;
+    display: inline-block;
+    height: 12px;
+}
+.x-istanbul .cover-empty {
+    background: white;
+    border-left: none;
+}
+.x-istanbul .cover-fill {
+    background: #ccc;
+    border-right: 1px solid #999;
+}
+.x-istanbul .cover-full {
+    border-right: none !important;
+}
+.x-istanbul .coverage {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0
+}
+.x-istanbul .coverage td {
+    color: #111;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.x-istanbul .coverage td .cline-any {
+    display: inline-block;
+    padding: 0 5px;
+    width: 60px;
+}
+.x-istanbul .coverage td .cline-neutral {
+    background: #eee;
+}
+.x-istanbul .coverage td .cline-no {
+    background: #fc8c84;
+}
+.x-istanbul .coverage td .cline-yes {
+    background: #b5d592;
+    color: #999;
+}
+.x-istanbul .coverage .line-count {
+    padding-right: 5px;
+    text-align: right;
+    width: 50px;
+}
+.x-istanbul .coverage .line-count a {
+    text-decoration: none;
+}
+.x-istanbul .coverage .line-coverage {
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    color: #777 !important;
+    text-align: right;
+}
+.x-istanbul .coverage-summary {
+    padding: 20px;
+}
+.x-istanbul .coverage-summary table {
+    border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%
+}
+.x-istanbul .coverage-summary td {
+    border: 1px solid #999;
+    margin: 0;
+    padding: 5px;
+    white-space: nowrap;
+}
+.x-istanbul .coverage-summary th {
+    margin: 0;
+    padding: 0 0 2px 0;
+}
+.x-istanbul .cstat-no {
+    background: #fc8c84;
+    color: #111;
+}
+.x-istanbul .cstat-skip {
+    background: #ddd;
+    color: #111;
+}
+.x-istanbul .cstat-yes {
+    color: #111;
+}
+.x-istanbul .entity,
+.x-istanbul .metric {
+    font-weight: bold;
+}
+.x-istanbul .footer,
+.x-istanbul .header {
+    background: #eee;
+    padding: 20px;
+}
+.x-istanbul .footer {
+    border-top: 1px solid #999;
+}
+.x-istanbul .fstat-no {
+    background: #ffc520;
+    color: #111 !important;
+}
+.x-istanbul .fstat-skip {
+    background: #ddd;
+    color: #111 !important;
+}
+.x-istanbul .header {
+    border-bottom: 1px solid #999;
+    top: 0;
+    width: 100%;
+}
+.x-istanbul .high {
+    background: #b5d592 !important;
+}
+.x-istanbul .ignore-none {
+    color: #999;
+    font-weight: normal;
+}
+.x-istanbul .low {
+    background: #fc8c84 !important;
+}
+.x-istanbul .medium {
+    background: #ffe87c !important;
+}
+.x-istanbul .meta {
+    text-align: center;
+}
+.x-istanbul .metric {
+    background: white;
+    border: 1px solid #999;
+    display: inline-block;
+    padding: .3em;
+}
+.x-istanbul .missing-if-branch {
+    background: black;
+    color: yellow;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 4px;
+    position: relative;
+}
+.x-istanbul .missing-if-branch .typ,
+.x-istanbul .skip-if-branch .typ {
+    color: inherit !important;
+}
+.x-istanbul .prettyprint {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.x-istanbul .skip-if-branch {
+    background: #ccc;
+    color: white;
+    display: none;
+    margin-right: 10px;
+    padding: 0 4px;
+    position: relative;
+}
+/* validateLineSortedReset */
+.x-istanbul a {
+    color: #00d;
+    text-decoration: underline;
+}
+.x-istanbul pre {
+    overflow: visible;
+    white-space: pre
+}
+.x-istanbul .file div {
+    margin-bottom: 2px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+}
+.x-istanbul .tableHeader {
+    border-collapse: collapse;
+    margin: 0 auto 10px auto;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+}
+.x-istanbul .tableHeader td {
+    background: #fff;
+    border: 1px solid #999;
+    padding: 5px;
+}
+.x-istanbul .tableHeader th {
+    padding: 0 0 2px 0;
+}
+</style>
+</head>
+
+<body class="x-istanbul">
+
+<script>
+// init domOnEventSelectAllWithinPre
+(function () {
+/*
+ * this function will limit select-all within <pre tabIndex="0"> elements
+ * https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+ */
+    "use strict";
+    if (window.domOnEventSelectAllWithinPre) {
+        return;
+    }
+    window.domOnEventSelectAllWithinPre = function (evt) {
+        var range;
+        var selection;
+        if (
+            evt
+            && evt.key === "a"
+            && (evt.ctrlKey || evt.metaKey)
+            && evt.target.closest(
+                "pre"
+            )
+        ) {
+            range = document.createRange();
+            range.selectNodeContents(evt.target.closest(
+                "pre"
+            ));
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            evt.preventDefault();
+        }
+    };
+    // handle evt
+    document.addEventListener(
+        "keydown",
+        window.domOnEventSelectAllWithinPre
+    );
+}());
+</script>
+<div class="header high">
+
+    <h2 style="font-weight: bold;">
+        <a href="https://github.com/kaizhu256/node-sqlite3-lite">sqlite3-lite (2020.8.19)</a>
+    </h2>
+
+    <h2>Code coverage report for <span class="entity">example.js</span></h2>
+    <table class="tableHeader">
+    <thead>
+    <tr>
+        <th>Ignored</th>
+        <th>Statements</th>
+        <th>Branches</th>
+        <th>Functions</th>
+        <th>Lines</th>
+    </tr>
+    </thead>
+    <tbody>
+        <td>
+            Statements: 1<br>
+            Branches: 1<br>
+            Functions: 0
+        </td>
+        <td>
+            100%<br>
+            (20 / 20)
+        </td>
+        <td>
+            100%<br>
+            (5 / 5)
+        </td>
+        <td>
+            100%<br>
+            (3 / 3)
+        </td>
+        <td>
+            100%<br>
+            (20 / 20)
+        </td>
+    </tbody>
+    </table>
+    <div class="path"><a href="index.html">All files</a> &#187; example.js</div>
+</div>
+<div class="body">
+
+<pre><table class="coverage"><tr>
+        <td class="line-count"><a href="#l1" id="l1">1</a>
+<a href="#l2" id="l2">2</a>
+<a href="#l3" id="l3">3</a>
+<a href="#l4" id="l4">4</a>
+<a href="#l5" id="l5">5</a>
+<a href="#l6" id="l6">6</a>
+<a href="#l7" id="l7">7</a>
+<a href="#l8" id="l8">8</a>
+<a href="#l9" id="l9">9</a>
+<a href="#l10" id="l10">10</a>
+<a href="#l11" id="l11">11</a>
+<a href="#l12" id="l12">12</a>
+<a href="#l13" id="l13">13</a>
+<a href="#l14" id="l14">14</a>
+<a href="#l15" id="l15">15</a>
+<a href="#l16" id="l16">16</a>
+<a href="#l17" id="l17">17</a>
+<a href="#l18" id="l18">18</a>
+<a href="#l19" id="l19">19</a>
+<a href="#l20" id="l20">20</a>
+<a href="#l21" id="l21">21</a>
+<a href="#l22" id="l22">22</a>
+<a href="#l23" id="l23">23</a>
+<a href="#l24" id="l24">24</a>
+<a href="#l25" id="l25">25</a>
+<a href="#l26" id="l26">26</a>
+<a href="#l27" id="l27">27</a>
+<a href="#l28" id="l28">28</a>
+<a href="#l29" id="l29">29</a>
+<a href="#l30" id="l30">30</a>
+<a href="#l31" id="l31">31</a>
+<a href="#l32" id="l32">32</a>
+<a href="#l33" id="l33">33</a>
+<a href="#l34" id="l34">34</a>
+<a href="#l35" id="l35">35</a>
+<a href="#l36" id="l36">36</a>
+<a href="#l37" id="l37">37</a>
+<a href="#l38" id="l38">38</a>
+<a href="#l39" id="l39">39</a>
+<a href="#l40" id="l40">40</a>
+<a href="#l41" id="l41">41</a>
+<a href="#l42" id="l42">42</a>
+<a href="#l43" id="l43">43</a>
+<a href="#l44" id="l44">44</a>
+<a href="#l45" id="l45">45</a>
+<a href="#l46" id="l46">46</a>
+<a href="#l47" id="l47">47</a>
+<a href="#l48" id="l48">48</a>
+<a href="#l49" id="l49">49</a>
+<a href="#l50" id="l50">50</a>
+<a href="#l51" id="l51">51</a>
+<a href="#l52" id="l52">52</a>
+<a href="#l53" id="l53">53</a>
+<a href="#l54" id="l54">54</a>
+<a href="#l55" id="l55">55</a>
+<a href="#l56" id="l56">56</a>
+<a href="#l57" id="l57">57</a>
+<a href="#l58" id="l58">58</a>
+<a href="#l59" id="l59">59</a>
+<a href="#l60" id="l60">60</a>
+<a href="#l61" id="l61">61</a>
+<a href="#l62" id="l62">62</a>
+<a href="#l63" id="l63">63</a>
+<a href="#l64" id="l64">64</a>
+<a href="#l65" id="l65">65</a>
+<a href="#l66" id="l66">66</a>
+<a href="#l67" id="l67">67</a>
+<a href="#l68" id="l68">68</a>
+<a href="#l69" id="l69">69</a>
+<a href="#l70" id="l70">70</a>
+<a href="#l71" id="l71">71</a>
+<a href="#l72" id="l72">72</a>
+<a href="#l73" id="l73">73</a>
+<a href="#l74" id="l74">74</a>
+<a href="#l75" id="l75">75</a>
+<a href="#l76" id="l76">76</a>
+<a href="#l77" id="l77">77</a>
+<a href="#l78" id="l78">78</a>
+<a href="#l79" id="l79">79</a>
+<a href="#l80" id="l80">80</a>
+<a href="#l81" id="l81">81</a>
+<a href="#l82" id="l82">82</a>
+<a href="#l83" id="l83">83</a>
+<a href="#l84" id="l84">84</a>
+<a href="#l85" id="l85">85</a>
+<a href="#l86" id="l86">86</a>
+<a href="#l87" id="l87">87</a>
+<a href="#l88" id="l88">88</a>
+<a href="#l89" id="l89">89</a>
+<a href="#l90" id="l90">90</a>
+<a href="#l91" id="l91">91</a>
+<a href="#l92" id="l92">92</a>
+<a href="#l93" id="l93">93</a>
+<a href="#l94" id="l94">94</a>
+<a href="#l95" id="l95">95</a>
+<a href="#l96" id="l96">96</a>
+<a href="#l97" id="l97">97</a>
+<a href="#l98" id="l98">98</a>
+<a href="#l99" id="l99">99</a>
+<a href="#l100" id="l100">100</a>
+<a href="#l101" id="l101">101</a>
+<a href="#l102" id="l102">102</a>
+<a href="#l103" id="l103">103</a>
+<a href="#l104" id="l104">104</a>
+<a href="#l105" id="l105">105</a>
+<a href="#l106" id="l106">106</a>
+<a href="#l107" id="l107">107</a>
+<a href="#l108" id="l108">108</a>
+<a href="#l109" id="l109">109</a>
+<a href="#l110" id="l110">110</a>
+</td>
+        <td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+</td>
+        <td class="text"><pre class="prettyprint lang-js" tabIndex="0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+example.js
+
+this script will run node-demo of sqlite3-lite
+
+instruction
+    1. save this script as example.js
+    2. run shell-command:
+        $ npm install sqlite3-lite &amp;&amp; \
+            PORT=8081 node example.js
+    3. edit this script to suit your needs
+*/
+
+
+/* istanbul instrument in package sqlite3 */
+/* jslint utility2:true */
+/* istanbul ignore next */
+// run shared js-env code - init-local
+(function () {
+    "use strict";
+    let db;
+    let sqlite3;
+    sqlite3 = (
+        globalThis.utility2_rollup
+        || globalThis.utility2_jslint
+        || globalThis.utility2_moduleExports
+    );
+    db = new sqlite3.Database(":memory:");
+    db.serialize(function () {
+        let ii;
+        let stmt;
+        db.run("CREATE TABLE lorem (info TEXT)");
+        stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+        ii = 0;
+        while (ii &lt; 10) {
+            stmt.run("Ipsum " + ii);
+            ii += 1;
+        }
+        stmt.finalize();
+        db.each("SELECT rowid AS id, info FROM lorem", function (err, row) {
+            <span class="skip-if-branch" title="if path not taken">I</span>if (err) {
+<span class="cstat-skip" title="statement not covered">                throw err;</span>
+            }
+            console.log(row.id + ": " + row.info);
+        });
+    });
+    db.close();
+}());
+</pre></td>
+</tr></table></pre>
+
+</div>
+<div class="footer">
+<div class="meta">
+    Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at ${datetime}
+</div>
+</div>
+
+</body>
+</html>
+
