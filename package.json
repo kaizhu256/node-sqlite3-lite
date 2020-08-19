@@ -1,0 +1,16 @@
+{
+    "devDependencies": {
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "homepage": "https://github.com/kaizhu256/node-sqlite3-lite",
+    "name": "sqlite3-lite",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaizhu256/node-sqlite3-lite.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shBuildCi",
+        "test": "./npm_scripts.sh"
+    },
+    "version": "0.0.1"
+}
