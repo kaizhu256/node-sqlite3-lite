@@ -487,8 +487,7 @@ sqlite3.verbose = function() {
 /*
 file none
 */
-local.Sqlite3Database = Database;
-local.Sqlite3Statement = Statement;
+Object.assign(local, sqlite3);
 /* jslint ignore:end */
 }());
 }());

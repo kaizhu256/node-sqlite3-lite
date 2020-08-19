@@ -296,13 +296,13 @@
     </thead>
     <tbody>
         <td>
-            Statements: 122<br>
-            Branches: 77<br>
-            Functions: 32
+            Statements: 119<br>
+            Branches: 75<br>
+            Functions: 30
         </td>
         <td>
             100%<br>
-            (206 / 206)
+            (205 / 205)
         </td>
         <td>
             100%<br>
@@ -314,7 +314,7 @@
         </td>
         <td>
             100%<br>
-            (203 / 203)
+            (202 / 202)
         </td>
     </tbody>
     </table>
@@ -816,7 +816,6 @@
 <a href="#l491" id="l491">491</a>
 <a href="#l492" id="l492">492</a>
 <a href="#l493" id="l493">493</a>
-<a href="#l494" id="l494">494</a>
 </td>
         <td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1104,9 +1103,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-yes">6</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -1114,8 +1113,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1308,7 +1307,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1440,21 +1438,21 @@
      */
 <span class="cstat-skip" title="statement not covered">        return;</span>
     }
-    function objectAssignDefault(tgt = {}, src = {}, depth = 0) {
+<span class="fstat-skip" title="function not covered">    function objectAssignDefault(tgt = {}, src = {}, depth = 0) {</span>
     /*
      * this function will if items from &lt;tgt&gt; are null, undefined, or "",
      * then overwrite them with items from &lt;src&gt;
      */
-        let recurse;
-        recurse = function (tgt, src, depth) {
-            Object.entries(src).forEach(function ([
+<span class="cstat-skip" title="statement not covered">        let recurse;</span>
+<span class="cstat-skip" title="statement not covered">        recurse = <span class="fstat-skip" title="function not covered">function (tgt, src, depth) {</span></span>
+<span class="cstat-skip" title="statement not covered">            Object.entries(src).forEach(<span class="fstat-skip" title="function not covered">function ([</span></span>
                 key, bb
             ]) {
-                let aa;
-                aa = tgt[key];
-                <span class="skip-if-branch" title="else path not taken">E</span>if (aa === undefined || <span class="branch-1 cbranch-skip" title="branch not covered">aa === null </span>|| <span class="branch-2 cbranch-skip" title="branch not covered">aa === "")</span> {
-                    tgt[key] = bb;
-                    return;
+<span class="cstat-skip" title="statement not covered">                let aa;</span>
+<span class="cstat-skip" title="statement not covered">                aa = tgt[key];</span>
+<span class="cstat-skip" title="statement not covered">                if (aa === undefined || aa === null || aa === "") {</span>
+<span class="cstat-skip" title="statement not covered">                    tgt[key] = bb;</span>
+<span class="cstat-skip" title="statement not covered">                    return;</span>
                 }
 <span class="cstat-skip" title="statement not covered">                if (</span>
                     depth !== 0
@@ -1465,8 +1463,8 @@
                 }
             });
         };
-        recurse(tgt, src, depth | 0);
-        return tgt;
+<span class="cstat-skip" title="statement not covered">        recurse(tgt, src, depth | 0);</span>
+<span class="cstat-skip" title="statement not covered">        return tgt;</span>
     }
 <span class="fstat-skip" title="function not covered">    function onErrorThrow(err) {</span>
     /*
@@ -1599,19 +1597,19 @@ var EventEmitter = require('events').EventEmitter;
 // module.exports = exports = sqlite3;
 
 function normalizeMethod (fn) {
-    return <span class="fstat-skip" title="function not covered">function (sql) {</span>
-<span class="cstat-skip" title="statement not covered">        var errBack;</span>
-<span class="cstat-skip" title="statement not covered">        var args = Array.prototype.slice.call(arguments, 1);</span>
-<span class="cstat-skip" title="statement not covered">        if (typeof args[args.length - 1] === 'function') {</span>
-<span class="cstat-skip" title="statement not covered">            var callback = args[args.length - 1];</span>
-<span class="cstat-skip" title="statement not covered">            errBack = <span class="fstat-skip" title="function not covered">function(err) {</span></span>
-<span class="cstat-skip" title="statement not covered">                if (err) {</span>
+    return function (sql) {
+        var errBack;
+        var args = Array.prototype.slice.call(arguments, 1);
+        if (typeof args[args.length - 1] === 'function') {
+            var callback = args[args.length - 1];
+            errBack = function(err) {
+                <span class="skip-if-branch" title="if path not taken">I</span>if (err) {
 <span class="cstat-skip" title="statement not covered">                    callback(err);</span>
                 }
             };
         }
-<span class="cstat-skip" title="statement not covered">        var statement = new Statement(this, sql, errBack);</span>
-<span class="cstat-skip" title="statement not covered">        return fn.call(this, statement, args);</span>
+        var statement = new Statement(this, sql, errBack);
+        return fn.call(this, statement, args);
     };
 }
 
@@ -1659,16 +1657,16 @@ inherits(Statement, EventEmitter);
 inherits(Backup, EventEmitter);
 
 // Database#prepare(sql, [bind1, bind2, ...], [callback])
-Database.prototype.prepare = normalizeMethod(<span class="fstat-skip" title="function not covered">function(statement, params) {</span>
-<span class="cstat-skip" title="statement not covered">    return params.length</span>
-        ? statement.bind.apply(statement, params)
+Database.prototype.prepare = normalizeMethod(function(statement, params) {
+    return params.length
+        ? <span class="branch-0 cbranch-skip" title="branch not covered">statement.bind.apply(statement, params)</span>
         : statement;
 });
 
 // Database#run(sql, [bind1, bind2, ...], [callback])
-Database.prototype.run = normalizeMethod(<span class="fstat-skip" title="function not covered">function(statement, params) {</span>
-<span class="cstat-skip" title="statement not covered">    statement.run.apply(statement, params).finalize();</span>
-<span class="cstat-skip" title="statement not covered">    return this;</span>
+Database.prototype.run = normalizeMethod(function(statement, params) {
+    statement.run.apply(statement, params).finalize();
+    return this;
 });
 
 // Database#get(sql, [bind1, bind2, ...], [callback])
@@ -1684,9 +1682,9 @@ Database.prototype.all = normalizeMethod(<span class="fstat-skip" title="functio
 });
 
 // Database#each(sql, [bind1, bind2, ...], [callback], [complete])
-Database.prototype.each = normalizeMethod(<span class="fstat-skip" title="function not covered">function(statement, params) {</span>
-<span class="cstat-skip" title="statement not covered">    statement.each.apply(statement, params).finalize();</span>
-<span class="cstat-skip" title="statement not covered">    return this;</span>
+Database.prototype.each = normalizeMethod(function(statement, params) {
+    statement.each.apply(statement, params).finalize();
+    return this;
 });
 
 Database.prototype.map = normalizeMethod(<span class="fstat-skip" title="function not covered">function(statement, params) {</span>
@@ -1803,8 +1801,7 @@ sqlite3.verbose = <span class="fstat-skip" title="function not covered">function
 /*
 file none
 */
-local.Sqlite3Database = Database;
-local.Sqlite3Statement = Statement;
+Object.assign(local, sqlite3);
 /* jslint ignore:end */
 }());
 }());
