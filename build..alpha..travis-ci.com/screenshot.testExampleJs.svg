@@ -20,7 +20,7 @@
 
 <tspan x="10" y="170"></tspan>
 <tspan x="10" y="186">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="202">100  948k  100  948k    0     0  2141k      0 --:--:-- --:--:-- --:--:-- 2146k</tspan>
+<tspan x="10" y="202">100  948k  100  948k    0     0  2197k      0 --:--:-- --:--:-- --:--:-- 2201k</tspan>
 
 <tspan x="10" y="218">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-linux-x64.\</tspan>
 <tspan x="10" y="234">tar.gz</tspan>
@@ -31,19 +31,19 @@
 
 <tspan x="10" y="282"></tspan>
 <tspan x="10" y="298">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="314">100  968k  100  968k    0     0  2565k      0 --:--:-- --:--:-- --:--:-- 2570k</tspan>
+<tspan x="10" y="314"> 13  968k   13  134k    0     0   336k      0  0:00:02 --:--:--  0:00:02  335k</tspan>
+<tspan x="10" y="330">100  968k  100  968k    0     0  1849k      0 --:--:-- --:--:-- --:--:-- 1849k</tspan>
 
-<tspan x="10" y="330">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-win32-x64.\</tspan>
-<tspan x="10" y="346">tar.gz</tspan>
+<tspan x="10" y="346">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-win32-x64.\</tspan>
+<tspan x="10" y="362">tar.gz</tspan>
 
-<tspan x="10" y="362">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</tspan>
+<tspan x="10" y="378">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</tspan>
 
-<tspan x="10" y="378">                                 Dload  Upload   Total   Spent    Left  Speed</tspan>
+<tspan x="10" y="394">                                 Dload  Upload   Total   Spent    Left  Speed</tspan>
 
-<tspan x="10" y="394"></tspan>
-<tspan x="10" y="410">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="410"></tspan>
 <tspan x="10" y="426">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="442">100  732k  100  732k    0     0  1945k      0 --:--:-- --:--:-- --:--:-- 1941k</tspan>
+<tspan x="10" y="442">100  732k  100  732k    0     0  2062k      0 --:--:-- --:--:-- --:--:-- 2067k</tspan>
 
 <tspan x="10" y="458">... finished running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha'</tspan>
 
@@ -65,7 +65,7 @@
 
 <tspan x="10" y="602">+ sqlite3-lite@2020.8.19</tspan>
 
-<tspan x="10" y="618">added 1 package from 1 contributor and audited 1 package in 2.176s</tspan>
+<tspan x="10" y="618">added 1 package from 1 contributor and audited 1 package in 2.279s</tspan>
 
 <tspan x="10" y="634">found 0 vulnerabilities</tspan>
 
