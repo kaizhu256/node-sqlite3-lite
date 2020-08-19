@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T20:12:34.919Z - npm-testing /home/travis/bu\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T20:16:08.239Z - npm-testing /home/travis/bu\</tspan>
 <tspan x="10" y="58">ild/kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 44596</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 63370</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
@@ -26,28 +26,28 @@
 <tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
 <tspan x="10" y="234">api-v3-darwin-x64.node</tspan>
 
-<tspan x="10" y="250"></tspan>
+<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
+<tspan x="10" y="266">api-v3-linux-x64.node</tspan>
 
-<tspan x="10" y="266">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
-<tspan x="10" y="282">uild/test-report.json</tspan>
+<tspan x="10" y="282"></tspan>
 
-<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
-<tspan x="10" y="314">api-v3-linux-x64.node</tspan>
+<tspan x="10" y="298">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
+<tspan x="10" y="314">uild/test-report.json</tspan>
 
-<tspan x="10" y="330">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
+<tspan x="10" y="346">api-v3-win32-x64.node</tspan>
 
-<tspan x="10" y="346">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
+<tspan x="10" y="362">jslint - 2ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
-<tspan x="10" y="362">jslint - 24ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="378">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="378">jslint - 26ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="394">jslint - 22ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js</tspan>
 
-<tspan x="10" y="394">jslint - 35ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="410">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="410">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/.node_sqlite3-v5.0.0-n\</tspan>
-<tspan x="10" y="426">api-v3-win32-x64.node</tspan>
+<tspan x="10" y="426">jslint - 25ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="442">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="442">jslint - 33ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
 <tspan x="10" y="458">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
@@ -65,7 +65,7 @@
 
 <tspan x="10" y="570">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
 
-<tspan x="10" y="586">testRunDefault - 1009 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="586">testRunDefault - 986 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
 <tspan x="10" y="602">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
 <tspan x="10" y="618">t.json</tspan>
@@ -79,22 +79,22 @@
 
 <tspan x="10" y="698">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="714">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T20:12:35.012Z</tspan>
+<tspan x="10" y="714">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T20:16:08.330Z</tspan>
 
-<tspan x="10" y="730">|    1009 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="730">|     986 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="746">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="762">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="778">L, like Gecko) HeadlessChrome/84.0.4147.135 Safari/537.36 - 2020-08-19T20:12:30.475Z</tspan>
+<tspan x="10" y="778">L, like Gecko) HeadlessChrome/84.0.4147.135 Safari/537.36 - 2020-08-19T20:16:03.919Z</tspan>
 
 <tspan x="10" y="794">|      11 ms            0 failed        2 passed      |</tspan>
 
 <tspan x="10" y="810">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="826">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T20:12:29.275Z</tspan>
+<tspan x="10" y="826">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T20:16:02.735Z</tspan>
 
-<tspan x="10" y="842">|    4471 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="842">|    4335 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="858">-------------------------------------------------------</tspan>
 
@@ -117,7 +117,7 @@
 
 <tspan x="10" y="1034"></tspan>
 
-<tspan x="10" y="1050">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T20:12:36.257Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="1050">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T20:16:09.547Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
