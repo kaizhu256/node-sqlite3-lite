@@ -1,9 +1,9 @@
-<svg height="1262" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="1262" fill="#555" width="720"></rect>
+<svg height="1198" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1198" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:08:41.499Z - npm-testing /home/travis/bu\</tspan>
+<tspan x="10" y="42">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:09:33.406Z - npm-testing /home/travis/bu\</tspan>
 <tspan x="10" y="58">ild/kaizhu256/node-sqlite3-lite</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
 <tspan x="10" y="122">uild/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; http-server listening on port 64605</tspan>
+<tspan x="10" y="138">&gt; http-server listening on port 57605</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
@@ -44,22 +44,22 @@
 <tspan x="10" y="362">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/b\</tspan>
 <tspan x="10" y="378">uild/test-report.json</tspan>
 
-<tspan x="10" y="394">jslint - 2ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
+<tspan x="10" y="394">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
 
-<tspan x="10" y="410">fsWriteFileWithMkdirp - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/apidoc.html</tspan>
+<tspan x="10" y="410">testRunDefault - 195088 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="426">testRunDefault - 279732 ms - [node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="426">jslint - 3ms - /home/travis/build/kaizhu256/node-sqlite3-lite/README.md</tspan>
 
 <tspan x="10" y="442">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
 <tspan x="10" y="458">t.json</tspan>
 
-<tspan x="10" y="474">jslint - 36ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3_lite.js</tspan>
+<tspan x="10" y="474">jslint - 22ms - /home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3_lite.js</tspan>
 
-<tspan x="10" y="490">jslint - 39ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
+<tspan x="10" y="490">jslint - 23ms - /home/travis/build/kaizhu256/node-sqlite3-lite/npm_scripts.sh</tspan>
 
-<tspan x="10" y="506">jslint - 43ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
+<tspan x="10" y="506">jslint - 25ms - /home/travis/build/kaizhu256/node-sqlite3-lite/package.json</tspan>
 
-<tspan x="10" y="522">jslint - 55ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
+<tspan x="10" y="522">jslint - 36ms - /home/travis/build/kaizhu256/node-sqlite3-lite/test.js</tspan>
 
 <tspan x="10" y="538"></tspan>
 
@@ -70,75 +70,68 @@
 
 <tspan x="10" y="602">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="618">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T05:04:02.057Z</tspan>
+<tspan x="10" y="618">| test-report - buildApidoc - node - linux v14.8.0 - 2020-08-19T05:06:18.577Z</tspan>
 
-<tspan x="10" y="634">|  279733 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="634">|  195089 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="650">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="666">| test-report - buildApp - node - linux v14.8.0 - 2020-08-19T05:03:47.800Z</tspan>
+<tspan x="10" y="666">| test-report - deployGithubTest - browser - /node-sqlite3-lite/build..alpha..travis-ci.com/app/\</tspan>
+<tspan x="10" y="682"> - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/84.0.41\</tspan>
+<tspan x="10" y="698">47.125 Safari/537.36 - 2020-08-19T05:07:07.678Z</tspan>
 
-<tspan x="10" y="682">|   13094 ms            0 failed        4 passed      |</tspan>
+<tspan x="10" y="714">|      33 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="698">-------------------------------------------------------</tspan>
+<tspan x="10" y="730">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="714">| test-report - deployGithubTest - browser - /node-sqlite3-lite/build..alpha..travis-ci.com/app/\</tspan>
-<tspan x="10" y="730"> - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/84.0.41\</tspan>
-<tspan x="10" y="746">47.125 Safari/537.36 - 2020-08-19T05:06:14.991Z</tspan>
+<tspan x="10" y="746">| test-report - deployGithubTest - browser - /node-sqlite3-lite/build..alpha..travis-ci.com/app/\</tspan>
+<tspan x="10" y="762"> - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/84.0.41\</tspan>
+<tspan x="10" y="778">47.125 Safari/537.36 - 2020-08-19T05:07:07.680Z</tspan>
 
-<tspan x="10" y="762">|      17 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="794">|      20 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="778">-------------------------------------------------------</tspan>
+<tspan x="10" y="810">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="794">| test-report - deployGithubTest - browser - /node-sqlite3-lite/build..alpha..travis-ci.com/app/\</tspan>
-<tspan x="10" y="810"> - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/84.0.41\</tspan>
-<tspan x="10" y="826">47.125 Safari/537.36 - 2020-08-19T05:06:15.095Z</tspan>
+<tspan x="10" y="826">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="842">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:06:13.718Z</tspan>
 
-<tspan x="10" y="842">|      21 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="858">|      18 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="858">-------------------------------------------------------</tspan>
+<tspan x="10" y="874">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="874">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="890">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:03:57.492Z</tspan>
+<tspan x="10" y="890">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="906">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:09:28.663Z</tspan>
 
-<tspan x="10" y="906">|      12 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="922">|      24 ms            0 failed        1 passed      |</tspan>
 
-<tspan x="10" y="922">-------------------------------------------------------</tspan>
+<tspan x="10" y="938">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="938">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="954">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:05:20.554Z</tspan>
+<tspan x="10" y="954">| test-report - npmTest - node - linux v14.8.0 - 2020-08-19T05:06:12.824Z</tspan>
 
-<tspan x="10" y="970">|      23 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="970">|    4503 ms            0 failed        4 passed      |</tspan>
 
 <tspan x="10" y="986">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1002">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="1018">L, like Gecko) HeadlessChrome/84.0.4147.125 Safari/537.36 - 2020-08-19T05:08:36.692Z</tspan>
+<tspan x="10" y="1002"></tspan>
 
-<tspan x="10" y="1034">|      46 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="1018">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
+<tspan x="10" y="1034">t.html</tspan>
 
-<tspan x="10" y="1050">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="1066"></tspan>
+<tspan x="10" y="1050">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
+<tspan x="10" y="1066">e.svg</tspan>
 
 <tspan x="10" y="1082">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1098">t.html</tspan>
+<tspan x="10" y="1098">t.badge.svg</tspan>
 
-<tspan x="10" y="1114">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/build.badg\</tspan>
-<tspan x="10" y="1130">e.svg</tspan>
+<tspan x="10" y="1114"></tspan>
 
-<tspan x="10" y="1146">fsWriteFileWithMkdirpSync - /home/travis/build/kaizhu256/node-sqlite3-lite/.tmp/build/test-repor\</tspan>
-<tspan x="10" y="1162">t.badge.svg</tspan>
+<tspan x="10" y="1130">buildApidoc - 0 failed tests</tspan>
 
-<tspan x="10" y="1178"></tspan>
+<tspan x="10" y="1146"></tspan>
 
-<tspan x="10" y="1194">buildApidoc - 0 failed tests</tspan>
+<tspan x="10" y="1162"></tspan>
 
-<tspan x="10" y="1210"></tspan>
-
-<tspan x="10" y="1226"></tspan>
-
-<tspan x="10" y="1242">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:08:42.076Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="1178">\x1b[35m[MODE_BUILD=buildApidoc]\x1b[0m - 2020-08-19T05:09:33.953Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
