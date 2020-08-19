@@ -7,6 +7,9 @@ shMain () {(set -e
     ARG1="$1"
     # run command - custom
     case "$1" in
+    postinstall)
+        node lib.sqlite3.js install
+        ;;
     esac
     # run command - default
     case "$ARG1" in

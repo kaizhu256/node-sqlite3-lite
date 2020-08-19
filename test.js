@@ -1,4 +1,4 @@
-/* istanbul instrument in package sqlite3_lite */
+/* istanbul instrument in package sqlite3 */
 // assets.utility2.header.js - start
 /* jslint utility2:true */
 /* istanbul ignore next */
@@ -198,6 +198,18 @@ local.testRunDefault(local);
 
 // run shared js-env code - function
 (function () {
-return;
+local.testCase_buildApp_default = function (opt, onError) {
+/*
+ * this function will test buildApp's default handling-behavior
+ */
+    local._testCase_buildApp_default({
+        assetsList: [
+            {
+                file: "/" + local.sqlite3_binding_file,
+                url: "/" + local.sqlite3_binding_file
+            }
+        ]
+    }, onError, opt);
+};
 }());
 }());

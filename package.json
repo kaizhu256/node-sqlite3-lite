@@ -1,21 +1,26 @@
 {
     "!!jslint_utility2": true,
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "the greatest app in the world!",
+    "description": "this zero-dependency package will provide pre-built version of node-sqlite3 (v5.0.0)",
     "devDependencies": {
         "utility2": "kaizhu256/node-utility2#alpha"
     },
     "engines": {
         "node": ">=12.0"
     },
-    "fileCount": 0,
+    "fileCount": 8,
     "homepage": "https://github.com/kaizhu256/node-sqlite3-lite",
-    "keywords": [],
+    "keywords": [
+        "sql",
+        "sqlite",
+        "sqlite3",
+        "database"
+    ],
     "license": "MIT",
-    "main": "lib.sqlite3_lite.js",
+    "main": "lib.sqlite3.js",
     "name": "sqlite3-lite",
     "nameAliasPublish": "",
-    "nameLib": "sqlite3_lite",
+    "nameLib": "sqlite3",
     "nameOriginal": "sqlite3-lite",
     "repository": {
         "type": "git",
