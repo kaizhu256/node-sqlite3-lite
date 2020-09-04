@@ -17,7 +17,7 @@
             "13": 2,
             "14": 2,
             "15": 2,
-            "16": 2,
+            "16": 0,
             "17": 0,
             "18": 0,
             "19": 0,
@@ -26,7 +26,7 @@
             "22": 0,
             "23": 0,
             "24": 0,
-            "25": 0,
+            "25": 2,
             "26": 0,
             "27": 0,
             "28": 0,
@@ -89,7 +89,8 @@
             "85": 2,
             "86": 2,
             "87": 2,
-            "88": 2
+            "88": 2,
+            "89": 2
         },
         "b": {
             "1": [
@@ -240,7 +241,7 @@
                 "skip": true
             },
             "3": {
-                "name": "assertJsonEqual",
+                "name": "objectDeepCopyWithKeysSorted",
                 "line": 37,
                 "loc": {
                     "start": {
@@ -249,37 +250,37 @@
                     },
                     "end": {
                         "line": 37,
-                        "column": 37
+                        "column": 47
                     }
                 },
                 "skip": true
             },
             "4": {
-                "name": "objectDeepCopyWithKeysSorted",
-                "line": 41,
+                "name": "(anonymous_4)",
+                "line": 51,
                 "loc": {
                     "start": {
-                        "line": 41,
-                        "column": 8
+                        "line": 51,
+                        "column": 40
                     },
                     "end": {
-                        "line": 41,
-                        "column": 51
+                        "line": 51,
+                        "column": 55
                     }
                 },
                 "skip": true
             },
             "5": {
-                "name": "(anonymous_5)",
-                "line": 55,
+                "name": "assertJsonEqual",
+                "line": 56,
                 "loc": {
                     "start": {
-                        "line": 55,
-                        "column": 44
+                        "line": 56,
+                        "column": 4
                     },
                     "end": {
-                        "line": 55,
-                        "column": 59
+                        "line": 56,
+                        "column": 37
                     }
                 },
                 "skip": true
@@ -421,28 +422,28 @@
             },
             "15": {
                 "name": "(anonymous_15)",
-                "line": 183,
+                "line": 184,
                 "loc": {
                     "start": {
-                        "line": 183,
+                        "line": 184,
                         "column": 1
                     },
                     "end": {
-                        "line": 183,
+                        "line": 184,
                         "column": 18
                     }
                 }
             },
             "16": {
                 "name": "(anonymous_16)",
-                "line": 189,
+                "line": 190,
                 "loc": {
                     "start": {
-                        "line": 189,
+                        "line": 190,
                         "column": 1
                     },
                     "end": {
-                        "line": 189,
+                        "line": 190,
                         "column": 13
                     }
                 },
@@ -450,28 +451,28 @@
             },
             "17": {
                 "name": "(anonymous_17)",
-                "line": 200,
+                "line": 201,
                 "loc": {
                     "start": {
-                        "line": 200,
+                        "line": 201,
                         "column": 1
                     },
                     "end": {
-                        "line": 200,
+                        "line": 201,
                         "column": 13
                     }
                 }
             },
             "18": {
                 "name": "(anonymous_18)",
-                "line": 201,
+                "line": 202,
                 "loc": {
                     "start": {
-                        "line": 201,
+                        "line": 202,
                         "column": 34
                     },
                     "end": {
-                        "line": 201,
+                        "line": 202,
                         "column": 58
                     }
                 }
@@ -484,7 +485,7 @@
                     "column": 0
                 },
                 "end": {
-                    "line": 178,
+                    "line": 179,
                     "column": 5
                 },
                 "skip": true
@@ -638,7 +639,7 @@
                     "column": 4
                 },
                 "end": {
-                    "line": 65,
+                    "line": 55,
                     "column": 5
                 },
                 "skip": true
@@ -649,107 +650,107 @@
                     "column": 8
                 },
                 "end": {
-                    "line": 59,
-                    "column": 9
+                    "line": 41,
+                    "column": 19
                 },
                 "skip": true
             },
             "17": {
                 "start": {
-                    "line": 45,
-                    "column": 12
+                    "line": 42,
+                    "column": 8
                 },
                 "end": {
-                    "line": 45,
-                    "column": 23
+                    "line": 44,
+                    "column": 9
                 },
                 "skip": true
             },
             "18": {
                 "start": {
-                    "line": 46,
+                    "line": 43,
                     "column": 12
                 },
                 "end": {
-                    "line": 48,
-                    "column": 13
+                    "line": 43,
+                    "column": 23
                 },
                 "skip": true
             },
             "19": {
                 "start": {
-                    "line": 47,
-                    "column": 16
+                    "line": 46,
+                    "column": 8
                 },
                 "end": {
-                    "line": 47,
-                    "column": 27
+                    "line": 48,
+                    "column": 9
                 },
                 "skip": true
             },
             "20": {
                 "start": {
-                    "line": 50,
+                    "line": 47,
                     "column": 12
                 },
                 "end": {
-                    "line": 52,
-                    "column": 13
+                    "line": 47,
+                    "column": 57
                 },
                 "skip": true
             },
             "21": {
                 "start": {
-                    "line": 51,
-                    "column": 16
+                    "line": 50,
+                    "column": 8
                 },
                 "end": {
-                    "line": 51,
-                    "column": 61
+                    "line": 50,
+                    "column": 20
                 },
                 "skip": true
             },
             "22": {
                 "start": {
-                    "line": 54,
-                    "column": 12
+                    "line": 51,
+                    "column": 8
                 },
                 "end": {
-                    "line": 54,
-                    "column": 24
+                    "line": 53,
+                    "column": 11
                 },
                 "skip": true
             },
             "23": {
                 "start": {
-                    "line": 55,
+                    "line": 52,
                     "column": 12
                 },
                 "end": {
-                    "line": 57,
-                    "column": 15
+                    "line": 52,
+                    "column": 65
                 },
                 "skip": true
             },
             "24": {
                 "start": {
-                    "line": 56,
-                    "column": 16
+                    "line": 54,
+                    "column": 8
                 },
                 "end": {
-                    "line": 56,
-                    "column": 69
+                    "line": 54,
+                    "column": 22
                 },
                 "skip": true
             },
             "25": {
                 "start": {
-                    "line": 58,
-                    "column": 12
+                    "line": 56,
+                    "column": 4
                 },
                 "end": {
-                    "line": 58,
-                    "column": 26
+                    "line": 65,
+                    "column": 5
                 },
                 "skip": true
             },
@@ -1343,39 +1344,39 @@
                 },
                 "end": {
                     "line": 177,
-                    "column": 38
+                    "column": 70
                 },
                 "skip": true
             },
             "80": {
                 "start": {
-                    "line": 183,
-                    "column": 0
+                    "line": 178,
+                    "column": 4
                 },
                 "end": {
-                    "line": 215,
-                    "column": 5
-                }
-            },
-            "81": {
-                "start": {
-                    "line": 189,
-                    "column": 0
-                },
-                "end": {
-                    "line": 196,
-                    "column": 5
+                    "line": 178,
+                    "column": 38
                 },
                 "skip": true
             },
-            "82": {
+            "81": {
                 "start": {
-                    "line": 191,
+                    "line": 184,
                     "column": 0
                 },
                 "end": {
-                    "line": 191,
-                    "column": 51
+                    "line": 216,
+                    "column": 5
+                }
+            },
+            "82": {
+                "start": {
+                    "line": 190,
+                    "column": 0
+                },
+                "end": {
+                    "line": 197,
+                    "column": 5
                 },
                 "skip": true
             },
@@ -1386,7 +1387,7 @@
                 },
                 "end": {
                     "line": 192,
-                    "column": 30
+                    "column": 51
                 },
                 "skip": true
             },
@@ -1397,30 +1398,31 @@
                 },
                 "end": {
                     "line": 193,
-                    "column": 25
+                    "column": 30
                 },
                 "skip": true
             },
             "85": {
                 "start": {
-                    "line": 195,
+                    "line": 194,
                     "column": 0
                 },
                 "end": {
-                    "line": 195,
-                    "column": 28
+                    "line": 194,
+                    "column": 25
                 },
                 "skip": true
             },
             "86": {
                 "start": {
-                    "line": 200,
+                    "line": 196,
                     "column": 0
                 },
                 "end": {
-                    "line": 214,
-                    "column": 5
-                }
+                    "line": 196,
+                    "column": 28
+                },
+                "skip": true
             },
             "87": {
                 "start": {
@@ -1428,17 +1430,27 @@
                     "column": 0
                 },
                 "end": {
-                    "line": 213,
-                    "column": 2
+                    "line": 215,
+                    "column": 5
                 }
             },
             "88": {
                 "start": {
-                    "line": 205,
+                    "line": 202,
+                    "column": 0
+                },
+                "end": {
+                    "line": 214,
+                    "column": 2
+                }
+            },
+            "89": {
+                "start": {
+                    "line": 206,
                     "column": 4
                 },
                 "end": {
-                    "line": 212,
+                    "line": 213,
                     "column": 21
                 }
             }
@@ -1540,84 +1552,84 @@
                 ]
             },
             "4": {
-                "line": 46,
+                "line": 42,
                 "type": "if",
                 "locations": [
                     {
                         "start": {
-                            "line": 46,
-                            "column": 12
+                            "line": 42,
+                            "column": 8
                         },
                         "end": {
-                            "line": 46,
-                            "column": 12
+                            "line": 42,
+                            "column": 8
                         },
                         "skip": true
                     },
                     {
                         "start": {
-                            "line": 46,
-                            "column": 12
+                            "line": 42,
+                            "column": 8
                         },
                         "end": {
-                            "line": 46,
-                            "column": 12
+                            "line": 42,
+                            "column": 8
                         },
                         "skip": true
                     }
                 ]
             },
             "5": {
-                "line": 46,
+                "line": 42,
                 "type": "binary-expr",
                 "locations": [
                     {
                         "start": {
-                            "line": 46,
-                            "column": 16
+                            "line": 42,
+                            "column": 12
                         },
                         "end": {
-                            "line": 46,
-                            "column": 39
+                            "line": 42,
+                            "column": 35
                         },
                         "skip": true
                     },
                     {
                         "start": {
-                            "line": 46,
-                            "column": 43
+                            "line": 42,
+                            "column": 39
                         },
                         "end": {
-                            "line": 46,
-                            "column": 47
+                            "line": 42,
+                            "column": 43
                         },
                         "skip": true
                     }
                 ]
             },
             "6": {
-                "line": 50,
+                "line": 46,
                 "type": "if",
                 "locations": [
                     {
                         "start": {
-                            "line": 50,
-                            "column": 12
+                            "line": 46,
+                            "column": 8
                         },
                         "end": {
-                            "line": 50,
-                            "column": 12
+                            "line": 46,
+                            "column": 8
                         },
                         "skip": true
                     },
                     {
                         "start": {
-                            "line": 50,
-                            "column": 12
+                            "line": 46,
+                            "column": 8
                         },
                         "end": {
-                            "line": 50,
-                            "column": 12
+                            "line": 46,
+                            "column": 8
                         },
                         "skip": true
                     }
@@ -2126,27 +2138,27 @@
                 ]
             },
             "21": {
-                "line": 191,
+                "line": 192,
                 "type": "binary-expr",
                 "locations": [
                     {
                         "start": {
-                            "line": 191,
+                            "line": 192,
                             "column": 8
                         },
                         "end": {
-                            "line": 191,
+                            "line": 192,
                             "column": 27
                         },
                         "skip": true
                     },
                     {
                         "start": {
-                            "line": 191,
+                            "line": 192,
                             "column": 31
                         },
                         "end": {
-                            "line": 191,
+                            "line": 192,
                             "column": 50
                         },
                         "skip": true
@@ -2191,29 +2203,29 @@
             "        isBrowser && typeof globalThis.importScripts === \"function\"",
             "    );",
             "    // init function",
+            "    function objectDeepCopyWithKeysSorted(obj) {",
+            "    /*",
+            "     * this function will recursively deep-copy <obj> with keys sorted",
+            "     */",
+            "        let sorted;",
+            "        if (typeof obj !== \"object\" || !obj) {",
+            "            return obj;",
+            "        }",
+            "        // recursively deep-copy list with child-keys sorted",
+            "        if (Array.isArray(obj)) {",
+            "            return obj.map(objectDeepCopyWithKeysSorted);",
+            "        }",
+            "        // recursively deep-copy obj with keys sorted",
+            "        sorted = {};",
+            "        Object.keys(obj).sort().forEach(function (key) {",
+            "            sorted[key] = objectDeepCopyWithKeysSorted(obj[key]);",
+            "        });",
+            "        return sorted;",
+            "    }",
             "    function assertJsonEqual(aa, bb) {",
             "    /*",
             "     * this function will assert JSON.stringify(<aa>) === JSON.stringify(<bb>)",
             "     */",
-            "        function objectDeepCopyWithKeysSorted(obj) {",
-            "        /*",
-            "         * this function will recursively deep-copy <obj> with keys sorted",
-            "         */",
-            "            let sorted;",
-            "            if (typeof obj !== \"object\" || !obj) {",
-            "                return obj;",
-            "            }",
-            "            // recursively deep-copy list with child-keys sorted",
-            "            if (Array.isArray(obj)) {",
-            "                return obj.map(objectDeepCopyWithKeysSorted);",
-            "            }",
-            "            // recursively deep-copy obj with keys sorted",
-            "            sorted = {};",
-            "            Object.keys(obj).sort().forEach(function (key) {",
-            "                sorted[key] = objectDeepCopyWithKeysSorted(obj[key]);",
-            "            });",
-            "            return sorted;",
-            "        }",
             "        aa = JSON.stringify(objectDeepCopyWithKeysSorted(aa));",
             "        bb = JSON.stringify(objectDeepCopyWithKeysSorted(bb));",
             "        if (aa !== bb) {",
@@ -2331,6 +2343,7 @@
             "    local.isWebWorker = isWebWorker;",
             "    local.nop = nop;",
             "    local.objectAssignDefault = objectAssignDefault;",
+            "    local.objectDeepCopyWithKeysSorted = objectDeepCopyWithKeysSorted;",
             "    local.onErrorThrow = onErrorThrow;",
             "}());",
             "// assets.utility2.header.js - end",
@@ -2388,16 +2401,16 @@
             "27": 2,
             "33": 2,
             "37": 2,
-            "41": 2,
-            "45": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
             "46": 1,
             "47": 1,
             "50": 1,
             "51": 1,
+            "52": 1,
             "54": 1,
-            "55": 1,
-            "56": 1,
-            "58": 1,
+            "56": 2,
             "60": 1,
             "61": 1,
             "62": 1,
@@ -2452,15 +2465,16 @@
             "175": 2,
             "176": 2,
             "177": 2,
-            "183": 2,
-            "189": 2,
-            "191": 2,
+            "178": 2,
+            "184": 2,
+            "190": 2,
             "192": 2,
             "193": 2,
-            "195": 2,
-            "200": 2,
+            "194": 2,
+            "196": 2,
             "201": 2,
-            "205": 2
+            "202": 2,
+            "206": 2
         }
     },
     "/home/travis/build/kaizhu256/node-sqlite3-lite/lib.sqlite3.js": {

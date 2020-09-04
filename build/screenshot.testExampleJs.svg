@@ -9,7 +9,7 @@
 
 <tspan x="10" y="74"></tspan>
 
-<tspan x="10" y="90">running command 'npm run postinstall sqlite3-lite' ...</tspan>
+<tspan x="10" y="90">running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha' ...</tspan>
 
 <tspan x="10" y="106">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-darwin-x64\</tspan>
 <tspan x="10" y="122">.tar.gz</tspan>
@@ -20,8 +20,8 @@
 
 <tspan x="10" y="170"></tspan>
 <tspan x="10" y="186">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="202"> 46  948k   46  441k    0     0  1191k      0 --:--:-- --:--:-- --:--:-- 1190k</tspan>
-<tspan x="10" y="218">100  948k  100  948k    0     0  2371k      0 --:--:-- --:--:-- --:--:-- 2372k</tspan>
+<tspan x="10" y="202">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="218">100  948k  100  948k    0     0  2040k      0 --:--:-- --:--:-- --:--:-- 2040k</tspan>
 
 <tspan x="10" y="234">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-linux-x64.\</tspan>
 <tspan x="10" y="250">tar.gz</tspan>
@@ -32,7 +32,7 @@
 
 <tspan x="10" y="298"></tspan>
 <tspan x="10" y="314">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="330">100  968k  100  968k    0     0  1560k      0 --:--:-- --:--:-- --:--:-- 1562k</tspan>
+<tspan x="10" y="330">100  968k  100  968k    0     0  2230k      0 --:--:-- --:--:-- --:--:-- 2232k</tspan>
 
 <tspan x="10" y="346">sqlite3 - fetching https://mapbox-node-binary.s3.amazonaws.com/sqlite3/v5.0.0/napi-v3-win32-x64.\</tspan>
 <tspan x="10" y="362">tar.gz</tspan>
@@ -43,10 +43,10 @@
 
 <tspan x="10" y="410"></tspan>
 <tspan x="10" y="426">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
-<tspan x="10" y="442">  9  732k    9 68210    0     0   215k      0  0:00:03 --:--:--  0:00:03  214k</tspan>
-<tspan x="10" y="458">100  732k  100  732k    0     0  1825k      0 --:--:-- --:--:-- --:--:-- 1825k</tspan>
+<tspan x="10" y="442">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</tspan>
+<tspan x="10" y="458">100  732k  100  732k    0     0  1913k      0 --:--:-- --:--:-- --:--:-- 1911k</tspan>
 
-<tspan x="10" y="474">... finished running command 'npm run postinstall sqlite3-lite'</tspan>
+<tspan x="10" y="474">... finished running command 'npm run postinstall kaizhu256/node-sqlite3-lite#alpha'</tspan>
 
 <tspan x="10" y="490">npm WARN saveError ENOENT: no such file or directory, open '/tmp/app/package.json'</tspan>
 
@@ -66,7 +66,7 @@
 
 <tspan x="10" y="618">+ sqlite3-lite@2020.8.19</tspan>
 
-<tspan x="10" y="634">added 1 package from 1 contributor and audited 1 package in 1.728s</tspan>
+<tspan x="10" y="634">added 1 package from 1 contributor and audited 1 package in 2.376s</tspan>
 
 <tspan x="10" y="650">found 0 vulnerabilities</tspan>
 

@@ -1,6 +1,6 @@
 // usr/bin/env node
 /*
- * lib.jslint.js (2020.7.9)
+ * lib.jslint.js (2020.8.19)
  * https://github.com/kaizhu256/node-jslint-lite
  * this zero-dependency package will provide browser-compatible versions of jslint (v2020.7.2) and csslint (v2018.2.25), with working web-demo
  *
@@ -43,29 +43,29 @@
         isBrowser && typeof globalThis.importScripts === "function"
     );
     // init function
+    function objectDeepCopyWithKeysSorted(obj) {
+    /*
+     * this function will recursively deep-copy <obj> with keys sorted
+     */
+        let sorted;
+        if (typeof obj !== "object" || !obj) {
+            return obj;
+        }
+        // recursively deep-copy list with child-keys sorted
+        if (Array.isArray(obj)) {
+            return obj.map(objectDeepCopyWithKeysSorted);
+        }
+        // recursively deep-copy obj with keys sorted
+        sorted = {};
+        Object.keys(obj).sort().forEach(function (key) {
+            sorted[key] = objectDeepCopyWithKeysSorted(obj[key]);
+        });
+        return sorted;
+    }
     function assertJsonEqual(aa, bb) {
     /*
      * this function will assert JSON.stringify(<aa>) === JSON.stringify(<bb>)
      */
-        function objectDeepCopyWithKeysSorted(obj) {
-        /*
-         * this function will recursively deep-copy <obj> with keys sorted
-         */
-            let sorted;
-            if (typeof obj !== "object" || !obj) {
-                return obj;
-            }
-            // recursively deep-copy list with child-keys sorted
-            if (Array.isArray(obj)) {
-                return obj.map(objectDeepCopyWithKeysSorted);
-            }
-            // recursively deep-copy obj with keys sorted
-            sorted = {};
-            Object.keys(obj).sort().forEach(function (key) {
-                sorted[key] = objectDeepCopyWithKeysSorted(obj[key]);
-            });
-            return sorted;
-        }
         aa = JSON.stringify(objectDeepCopyWithKeysSorted(aa));
         bb = JSON.stringify(objectDeepCopyWithKeysSorted(bb));
         if (aa !== bb) {
@@ -183,6 +183,7 @@
     local.isWebWorker = isWebWorker;
     local.nop = nop;
     local.objectAssignDefault = objectAssignDefault;
+    local.objectDeepCopyWithKeysSorted = objectDeepCopyWithKeysSorted;
     local.onErrorThrow = onErrorThrow;
 }());
 // assets.utility2.header.js - end
@@ -17359,7 +17360,9 @@ local.jslintAndPrintDir = function (dir, opt, onError) {
                     }
                     // jslint file
                     require("fs").readFile(file, "utf8", function (err, data) {
-                        local.onErrorThrow(err);
+                        if (err) {
+                            return;
+                        }
                         local.jslintAndPrint(data, file, opt);
                         errCnt += local.jslintResult.errList.length;
                         console.error(
